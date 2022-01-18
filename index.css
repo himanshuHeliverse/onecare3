@@ -44,13 +44,40 @@ color: #7D7D7D;
     background: linear-gradient(180deg, #FFAFC6 -4.33%, #FFEFD4 109.25%);
 }
 .blu-bg{
+    color: white;
     background: #28B1DA;
 }
 .pink-bg{
     background: #FFF5E7;
 }
+.orange-bg{
+    background: #F8A425;
+    color: white;
+}
+.button{
+    border: none;
+ border-radius: 30px;
+ padding: 10px 20px;
+}
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.flex1{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+
+
+
+
+
+
+ header nav{
+     padding: 20px 0px;
+margin: auto;
+width: 95%;
 }
