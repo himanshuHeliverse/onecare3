@@ -58,6 +58,7 @@ color: #7D7D7D;
     border: none;
  border-radius: 30px;
  padding: 10px 20px;
+ margin: 0px 10px;
 }
 .flex{
     display: flex;
