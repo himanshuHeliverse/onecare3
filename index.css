@@ -48,5 +48,9 @@ color: #7D7D7D;
 }
 .pink-bg{
     background: #FFF5E7;
-
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
