@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+font-size: 46px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: -1.1200000047683716px;
+}
+h2{
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+}
+
+
+
+.center-txt{
+    text-align: center;
+}
+.drk-blu-txt{
+  color: #14566A;
+}
+.blu-txt{
+  color: #28B1DA;
+}
+.gray-txt{
+color: #7D7D7D;
+}
+.orange-txt{
+    color: #F27A66;
+}
+.blue-shd-gb{
+    background: linear-gradient(177.97deg, #A3E5FF 1.72%, #FFF1F1 98.52%);
+}
+.pink-shd-bg{
+    background: linear-gradient(180deg, #FFAFC6 -4.33%, #FFEFD4 109.25%);
+}
+.blu-bg{
+    background: #28B1DA;
+}
+.pink-bg{
+    background: #FFF5E7;
+
+}
