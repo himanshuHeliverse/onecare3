@@ -19,7 +19,13 @@ font-weight: 700;
 line-height: 28px;
 letter-spacing: 0em;
 }
-
+h3{
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+}
 
 
 .center-txt{
@@ -70,7 +76,11 @@ color: #7D7D7D;
     justify-content:flex-start;
     align-items: center;
 }
-
+.flex1-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 
 
