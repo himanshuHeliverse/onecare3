@@ -1,5 +1,5 @@
 <!doctype html>
-<html amp lang="en">
+<html amp lang="en" data-ampdevmode>
 
 <head>
     <meta charset="utf-8">
@@ -11,7 +11,9 @@
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-base-carousel"
         src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+    
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
     <style amp-boilerplate>
         body {
             -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -120,7 +122,6 @@
         }
 
         p {
-
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
@@ -143,9 +144,7 @@
             font-weight: 400;
             line-height: 18px;
             letter-spacing: 0em;
-
         }
-
         .blu-txt {
             color: #28B1DA;
         }
@@ -196,13 +195,20 @@
 
         header nav div:last-child,
         footer nav div:last-child {
-            border-left: 1px solid;
+            border-left: 1px solid gray;
             padding:0px 10px;
+            font-weight: 100;
+        }
+
+        header nav div:last-child h3,
+        footer nav div:last-child h3{
+      
+            font-weight: 100;
         }
 
         header nav,
         footer nav {
-            justify-content: space-between;
+            justify-content:center;
             padding: 10px;
             height: 100%;
             width: 95%;
@@ -225,8 +231,8 @@
 
         #form input {
             margin: 15px 5px;
-            padding: 12px;
-            font-size: 12px;
+            padding: 15px;
+            font-size: 14px;
             border-radius: 6px;
             border: 1px solid gray;
         }
@@ -330,16 +336,13 @@
             border: 1px solid #C4C4C4;
             border-radius: 100px;
         }
-
         .over-say-review-detail-wrapper {
             width: 75%;
         }
-
         .location-img-wrapper {
             width: 40%;
             margin-right: 5px;
         }
-
         .map-btn-wrapper>div {
             width: 50%;
             color: white;
@@ -348,7 +351,6 @@
             background: linear-gradient(90.13deg, #F8A622 -6.56%, #F16679 177.9%);
             border-radius: 5px;
         }
-
         #top {
             padding: 0px;
         }
@@ -495,7 +497,7 @@
             <div>
                 <amp-base-carousel id="carouselID" height="500" layout="fixed-height" visible-count="1"
                     advance-count="1" controls="never"
-                    on="slideChange: SelectorID.toggle(index=event.index, value=true), carouselDots.goToSlide(index=event.index)">
+                    on="slideChange: SelectorID.toggle(index=event.index, value=true)">
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
@@ -561,7 +563,7 @@
 
 
                 </amp-base-carousel>
-                <amp-selector id="selectorID" on="select:carouselID.goToSlide(index=event.targetOption)"
+                <amp-selector id="SelectorID" on="select:carouselID.goToSlide(index=event.targetOption)"
                     layout="container">
                     <ul id="carouselDots" class="dots">
                         <li option="0" selected></li>
@@ -590,20 +592,34 @@
 
 
 
-                <div style="display: flex; justify-content: space-between;">
-                    <div style="    display: flex;
-                    align-items: center;">
-                        <input type="checkbox" id="Online" name="Online Consultation" checked>
-                        <label style="font-size: 12px;" for="Online">Online Consultation</label>
+             
+                <amp-script width="200" height="100" script="hello-world" >
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="    display: flex;
+                        align-items: center;">
+                            <input type="checkbox" id="Online" name=" Consultation" value="Online" checked>
+                            <label style="font-size: 12px;" for="Online">Online Consultation</label>
+                        </div>
+    
+                        <div style="    display: flex;
+                        align-items: center;">
+                            <input  type="checkbox" id="Clinical" name="Consultation" value="Clinical">
+                            <label style="font-size: 12px;" for="Clinical">Clinical Consultation</label>
+                        </div>
+                 
                     </div>
+                  </amp-script>
+                  
+                  <!-- Add [target="amp-script"] to the <script> element. -->
+                  <script id="hello-world" type="text/plain" target="amp-script" >
+                    const btn = document.getElementsByName('Consultation');
+                    btn.addEventListener('change', function(){
+                   var v= $(this).value
+                   console.log(v)
+                    });
 
-                    <div style="    display: flex;
-                    align-items: center;">
-                        <input type="checkbox" id="Clinical" name="Clinical Consultation">
-                        <label style="font-size: 12px;" for="Clinical">Clinical Consultation</label>
-                    </div>
-
-                </div>
+                 
+                  </script>
                 <input class="blue-bg button" type="submit" value="SUBMIT">
                 <div submitting style="position: absolute; background-color: gray;">
                     <template type="amp-mustache">
@@ -622,6 +638,7 @@
                 </div>
             </form>
         </section>
+
         <section id="manage">
             <h1 class=" center-txt orange-txt">Manage your diabetes <br /> in 3 easy steps</h1>
             <div id="manage-wrapper">
@@ -685,6 +702,7 @@
 
             </div>
         </section>
+
         <section id="Diabetologists">
             <h1 class="center-txt ">Best Endocrinologists & Diabetologists<span class="orange-txt">in Bangalore</span>
             </h1>
@@ -970,13 +988,14 @@
 
             </div>
         </section>
+
         <section id="location">
             <h1 class="center-txt" style="color:  #F26975">Our Locations</h1>
             <h3 class="center-txt">We are at 3 locations in Bengaluru</h3>
 
             <div>
                 <div id="map-img-wrapper">
-                    <amp-img src="./assest/map.webp" width="1.2" height="1" layout="responsive" alt="logo">
+                    <amp-img src="./assest/Group 180.webp" width="1.5" height="1" layout="responsive" alt="logo">
                     </amp-img>
 
                 </div>
@@ -1143,6 +1162,7 @@
             </div>
 
         </section>
+
         <section style="padding: 0;" id="travel">
             <div style="background: linear-gradient(177.97deg, #D0F2FF 1.72%, #FFFFFF 98.52%)">
                 <div class="flex" style="padding: 10px;">
@@ -1322,6 +1342,7 @@
 
 
         </section>
+
         <section id="FAQ">
             <h1 class="center-txt drk-blu-txt">FAQs</h1>
 
@@ -1372,6 +1393,7 @@
 
 
         </section>
+
         <footer>
             <nav>
                 <div class="logo-wrapper">
