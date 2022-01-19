@@ -193,9 +193,11 @@
             display: flex;
             align-items: center;
         }
+
         header nav div:last-child,
-        footer nav div:last-child{
-            border-left: 1px solid ;
+        footer nav div:last-child {
+            border-left: 1px solid;
+            padding:0px 10px;
         }
 
         header nav,
@@ -313,7 +315,7 @@
         #over-say-review-wrapper>div {
             margin: 20px auto;
             background-color: white;
-            padding:10px;
+            padding: 10px;
             display: flex;
             border-radius: 10px;
             /* width: 80%; */
@@ -351,12 +353,12 @@
             padding: 0px;
         }
 
-        .slide:nth-child(even) {
+        .slide-wrapper:nth-child(even) {
             background: linear-gradient(177.97deg, #C6EFFF 1.72%, #F2E8FF 98.52%),
                 linear-gradient(0deg, #C4C4C4, #C4C4C4);
         }
 
-        .slide:nth-child(odd) {
+        .slide-wrapper:nth-child(odd) {
             background: linear-gradient(180deg, #FFCFDD -4.68%, #FFEFD4 118.2%),
                 linear-gradient(0deg, #C4C4C4, #C4C4C4);
         }
@@ -374,21 +376,24 @@
         #location div h1 {
             margin-left: 20px;
         }
-        #location >div>div{
+
+        #location>div>div {
             margin: 40px 0px;
 
         }
+
         .slide>div:first-child {
             display: flex;
             padding: 25px;
-            width: 85%;
+            /* width: 85%; */
             height: 200px;
             justify-content: space-between;
             position: absolute;
             flex-direction: column;
             align-items: flex-start;
         }
-        .slide>div:first-child p{
+
+        .slide>div:first-child p {
             margin: 15px 0px;
         }
 
@@ -417,7 +422,7 @@
 
         .dots {
             position: relative;
-            top: -35px;
+            top: -55px;
             text-align: center;
         }
 
@@ -488,62 +493,72 @@
         <section id="top">
 
             <div>
-                <amp-base-carousel id="carouselID"  height="500" layout="fixed-height" visible-count="1"
+                <amp-base-carousel id="carouselID" height="500" layout="fixed-height" visible-count="1"
                     advance-count="1" controls="never"
                     on="slideChange: SelectorID.toggle(index=event.index, value=true), carouselDots.goToSlide(index=event.index)">
-                    <div class="slide">
-                        <div>
-                            <h1>Anup khees<br /> <span style="font-weight: 100;">Age-35 yrs</span> </h1>
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div>
+                                <h1>Anup khees<br /> <span style="font-weight: 100;">Age-35 yrs</span> </h1>
 
-                            <p>My blood sugar level came down to 92/115 and my medicine dosage also got reduced to half
-                                and I'm very sure that it will stop completely in some time. </p>
-                            <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
-                                <h4 class="center-txt">Book a Doctor Consultation</h4>
+                                <p>My blood sugar level came down to 92/115 and my medicine dosage also got reduced to
+                                    half
+                                    and I'm very sure that it will stop completely in some time. </p>
+                                <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
+                                    <h4 class="center-txt">Book a Doctor Consultation</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <amp-img src="./assest/1_HEoLBLidT2u4mhJ0oiDgig 2 (1).webp" width="3" height="2.7"
-                                layout="responsive" alt="">
-                            </amp-img>
-                        </div>
-
-                    </div>
-                    <div class="slide">
-                        <div>
-
-                            <h1 class="orange-txt">Live a life beyond diabetes,<br /> starting today.</h1>
-
-                            <p>Our team includes leading diabetologists, endocrinologists, diabetes educators,
-                                dieticians, health coaches all working with you to build a personalised care plan
-                                specific to your need. </p>
-                            <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
-                                <h4 class="center-txt">Book a Doctor Consultation</h4>
+                            <div style="width: 320px; left:25%">
+                                <amp-img src="./assest/1_HEoLBLidT2u4mhJ0oiDgig 2 (1).webp" width="3" height="2.7"
+                                    layout="responsive" alt="">
+                                </amp-img>
                             </div>
-                        </div>
-                        <div>
-                            <amp-img src="./assest/istockphoto-1192489366-612x612 1.webp" width="1.5" height="1"
-                                layout="responsive" alt="">
-                            </amp-img>
-                        </div>
 
+                        </div>
                     </div>
-                    <div class="slide">
-                        <div>
-                            <h1>Don't just fight diabetes,<br /> understand & manage it.</h1>
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div>
 
-                            <p>Diabetes care is unique to everyone. Beat it with the Right Approach that works for you.
-                            </p>
-                            <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
-                                <h4 class="center-txt">Book a Doctor Consultation</h4>
+                                <h1 class="orange-txt">Live a life beyond diabetes,<br /> starting today.</h1>
+
+                                <p>Our team includes leading diabetologists, endocrinologists, diabetes educators,
+                                    dieticians, health coaches all working with you to build a personalised care plan
+                                    specific to your need. </p>
+                                <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
+                                    <h4 class="center-txt">Book a Doctor Consultation</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <amp-img src="./assest/slack-imgs-1 1.webp" width="1.5" height="1.3" layout="responsive"
-                                alt="">
-                            </amp-img>
-                        </div>
+                            <div style="width: 437px;">
+                                <amp-img src="./assest/istockphoto-1192489366-612x612 1.webp" width="1.5" height="1"
+                                    layout="responsive" alt="">
+                                </amp-img>
+                            </div>
 
+                        </div>
                     </div>
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div>
+                                <h1>Don't just fight diabetes,<br /> understand & manage it.</h1>
+
+                                <p>Diabetes care is unique to everyone. Beat it with the Right Approach that works for
+                                    you.
+                                </p>
+                                <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
+                                    <h4 class="center-txt">Book a Doctor Consultation</h4>
+                                </div>
+                            </div>
+                            <div style="    width: 332px;;
+                            left: 23%;">
+                                <amp-img src="./assest/slack-imgs-1 1.webp" width="1.5" height="1.3" layout="responsive"
+                                    alt="">
+                                </amp-img>
+                            </div>
+
+                        </div>
+                    </div>
+
 
                 </amp-base-carousel>
                 <amp-selector id="selectorID" on="select:carouselID.goToSlide(index=event.targetOption)"
@@ -770,7 +785,6 @@
 
             <div id="impact-program-wrapper">
 
-
             </div>
 
 
@@ -883,14 +897,14 @@
                         </div>
                         <div>
                             <div class="over-say-review-img-wrapper">
-                           
-                                
-                                    <amp-img src="./assest/p-Vector.webp" width="1" height="1" layout="responsive" alt="">
 
-                             
-                       
+
+                                <amp-img src="./assest/p-Vector.webp" width="1" height="1" layout="responsive" alt="">
+
+
+
                                 </amp-img>
-                  
+
                             </div>
                             <div class="over-say-review-detail-wrapper">
                                 <h4 class="orange-txt">Akanksha Pandey </h4>
@@ -1308,50 +1322,6 @@
 
 
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section id="FAQ">
             <h1 class="center-txt drk-blu-txt">FAQs</h1>
 
@@ -1402,36 +1372,6 @@
 
 
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <footer>
             <nav>
                 <div class="logo-wrapper">
