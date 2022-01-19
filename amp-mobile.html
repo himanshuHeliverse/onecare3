@@ -11,7 +11,7 @@
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-base-carousel"
         src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
-    
+
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
     <style amp-boilerplate>
@@ -142,9 +142,10 @@
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
-            line-height: 18px;
+            line-height: 15px;
             letter-spacing: 0em;
         }
+
         .blu-txt {
             color: #28B1DA;
         }
@@ -168,6 +169,11 @@
 
         .center-txt {
             text-align: center;
+        }
+
+        .pink-txt {
+            color: #F1647B;
+
         }
 
         .flex {
@@ -196,19 +202,19 @@
         header nav div:last-child,
         footer nav div:last-child {
             border-left: 1px solid gray;
-            padding:0px 10px;
+            padding: 0px 10px;
             font-weight: 100;
         }
 
         header nav div:last-child h3,
-        footer nav div:last-child h3{
-      
+        footer nav div:last-child h3 {
+
             font-weight: 100;
         }
 
         header nav,
         footer nav {
-            justify-content:center;
+            justify-content: center;
             padding: 10px;
             height: 100%;
             width: 95%;
@@ -336,13 +342,16 @@
             border: 1px solid #C4C4C4;
             border-radius: 100px;
         }
+
         .over-say-review-detail-wrapper {
             width: 75%;
         }
+
         .location-img-wrapper {
             width: 40%;
             margin-right: 5px;
         }
+
         .map-btn-wrapper>div {
             width: 50%;
             color: white;
@@ -351,6 +360,7 @@
             background: linear-gradient(90.13deg, #F8A622 -6.56%, #F16679 177.9%);
             border-radius: 5px;
         }
+
         #top {
             padding: 0px;
         }
@@ -468,6 +478,57 @@
         #tick-head>p {
             font-weight: 700;
             margin-right: 10px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container {
+            /* padding: 10px 40px; */
+            position: relative;
+            background-color: inherit;
+            /* width: 50%; */
+        }
+
+        /* The circles on the timeline */
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 225px;
+            height: 1px;
+            right: 50px;
+            background-color: #FFE1E6;
+            top: 100px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Place the container to the left */
+        /* .left {
+  left: 0;
+}
+
+/* Place the container to the right */
+        /* .right {
+  left: 50%;
+} */
+        */ */
+
+        /* Fix the circle for containers on the right side */
+        .right::after {
+            left: -16px;
+        }
+
+
+        .content {
+            margin: 20px 0px;
+            padding: 10px 0px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
         }
     </style>
 
@@ -592,26 +653,26 @@
 
 
 
-             
-                <amp-script width="200" height="100" script="hello-world" >
+
+                <amp-script width="200" height="100" script="hello-world">
                     <div style="display: flex; justify-content: space-between;">
                         <div style="    display: flex;
                         align-items: center;">
                             <input type="checkbox" id="Online" name=" Consultation" value="Online" checked>
                             <label style="font-size: 12px;" for="Online">Online Consultation</label>
                         </div>
-    
+
                         <div style="    display: flex;
                         align-items: center;">
-                            <input  type="checkbox" id="Clinical" name="Consultation" value="Clinical">
+                            <input type="checkbox" id="Clinical" name="Consultation" value="Clinical">
                             <label style="font-size: 12px;" for="Clinical">Clinical Consultation</label>
                         </div>
-                 
+
                     </div>
-                  </amp-script>
-                  
-                  <!-- Add [target="amp-script"] to the <script> element. -->
-                  <script id="hello-world" type="text/plain" target="amp-script" >
+                </amp-script>
+
+                <!-- Add [target="amp-script"] to the <script> element. -->
+                <script id="hello-world" type="text/plain" target="amp-script">
                     const btn = document.getElementsByName('Consultation');
                     btn.addEventListener('change', function(){
                    var v= $(this).value
@@ -801,9 +862,199 @@
             </h1>
             <h2 class=" center-txt ">5 Phase Treatment Approach for Type 2 & Pre diabetes</h2>
 
-            <div id="impact-program-wrapper">
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <div class="flex">
+
+                            <div class="flex" style="flex: 1;">
+                                <div style="width: 50px; margin: 20px;">
+                                    <amp-img src="./assest/pink1.webp" width="1" height="2" layout="responsive" alt="">
+                                    </amp-img>
+                                </div>
+                                <div>
+                                    <h3 class="pink-txt">
+                                        Lifestyle Insights
+                                    </h3><br />
+                                    <h3 class="pink-txt">Outcome</h3>
+                                </div>
+
+                            </div>
+
+
+
+                            <div style="flex: 1;">
+                                <h3>Duration 0 : 1 week</h3>
+                                <h4>
+
+                                    We will begin the programme by getting to know you, your lifestyle, and your eating
+                                    habits.</h4>
+                                <br />
+                                <h4>
+
+                                    You acquire practical knowledge about how we are going to fight your diabetes</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="flex">
+
+                            <div class="flex" style="flex: 1;">
+                                <div style="width: 75px; margin: 20px;">
+                                    <amp-img src="./assest/pink2.webp" width="1" height="2" layout="responsive" alt="">
+                                    </amp-img>
+                                </div>
+                                <div>
+                                    <h3 class="pink-txt">
+                                        A Fruitful Commitment
+                                    </h3><br />
+                                    <h3 class="pink-txt">Outcome</h3>
+                                </div>
+
+                            </div>
+
+
+
+                            <div style="flex: 1;">
+                                <h3>Duration 3 : 6 weeks</h3>
+                                <h4>
+
+
+                                    We will help you replace your harmful lifestyle habits with healthy ones..</h4>
+                                <br />
+                                <h4>
+                                    From weight reduction to energized physique, your body starts to enjoy a positive
+                                    transformation</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="flex">
+
+                            <div class="flex" style="flex: 1;">
+                                <div style="width: 75px; margin: 20px;">
+                                    <amp-img src="./assest/pink3.webp" width="1" height="2" layout="responsive" alt="">
+                                    </amp-img>
+                                </div>
+                                <div>
+                                    <h3 class="pink-txt">
+                                        Accelerated Recovery
+
+                                    </h3><br />
+                                    <h3 class="pink-txt">Outcome</h3>
+                                </div>
+
+                            </div>
+
+
+
+                            <div style="flex: 1;">
+                                <h3>Duration 8 : 12 weeks</h3>
+                                <h4>
+
+
+                                    Provides an extensive treatment plan to help control your diabetes.
+
+
+                                </h4>
+                                <br />
+                                <h4>
+
+
+                                    As our detox plan lowers your blood sugar, you will notice your dependence on
+                                    medication starting to wane.</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="flex">
+
+                            <div class="flex" style="flex: 1;">
+                                <div style="width: 75px; margin: 20px;">
+                                    <amp-img src="./assest/pink4.webp" width="1" height="2" layout="responsive" alt="">
+                                    </amp-img>
+                                </div>
+                                <div>
+                                    <h3 class="pink-txt">
+                                        Charting A Better Life
+
+                                    </h3><br />
+                                    <h3 class="pink-txt">Outcome</h3>
+                                </div>
+
+                            </div>
+
+
+
+                            <div style="flex: 1;">
+                                <h3>Duration 3 : 8 weeks</h3>
+                                <h4>
+
+
+
+                                    Here, you will focus on muscle building and strengthening.</h4>
+                                <br />
+                                <h4>
+
+
+
+                                    Building body muscles, and a sustained feeling of absolute wellness. </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="flex">
+
+                            <div class="flex" style="flex: 1;">
+                                <div style="width: 65px; margin: 20px;">
+                                    <amp-img src="./assest/pink5.webp" width="1" height="2" layout="responsive" alt="">
+                                    </amp-img>
+                                </div>
+                                <div>
+                                    <h3 class="pink-txt">
+                                        Keeping It Going
+
+                                    </h3><br />
+                                    <h3 class="pink-txt">Outcome</h3>
+                                </div>
+
+                            </div>
+
+
+
+                            <div style="flex: 1;">
+                                <h3>Duration 6 : 8 weeks</h3>
+                                <h4>
+
+
+                                    The final phase is meant to help you adjust to your new normal and help you in
+                                    sustaining it.
+                                </h4>
+                                <br />
+                                <h4>
+
+                                    With healthy habits already ingrained, you can keep diabetes under control forever.
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
             </div>
+
 
 
 
@@ -995,7 +1246,7 @@
 
             <div>
                 <div id="map-img-wrapper">
-                    <amp-img src="./assest/Group 180.webp" width="1.5" height="1" layout="responsive" alt="logo">
+                    <amp-img src="./Rectangle 33.svg" width="1.5" height="1" layout="responsive" alt="logo">
                     </amp-img>
 
                 </div>
@@ -1013,7 +1264,6 @@
                                     <p>Opposit to, Sobha Quartz, 227, Ground Floor, Off, Outer Ring Rd, Green Glen
                                         Layout,
                                         Bellandur, Bengaluru, Karnataka 560103
-
                                     </p>
                                 </div>
 
