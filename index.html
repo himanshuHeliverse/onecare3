@@ -600,10 +600,32 @@
 
         }
 
-        #loader {
+      
+        #sticky-btn{
             display: flex;
-            align-items: center;
-            flex-direction: column;
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    flex-direction: column;
+   
+    align-items: flex-end;
+        }
+        
+        #sticky-btn>div>div{
+            padding: 15px;
+            border-radius:10px ;
+            margin-left: 10px;
+        }
+        #sticky-btn>div{
+            width: 100%;
+  
+    background-color: white;
+    
+    display: flex;
+
+    align-items: center;
+    padding: 18px;
+
         }
     </style>
 
@@ -611,7 +633,26 @@
 
 <body>
 
+
+
+
     <div id="container">
+
+        <div id="sticky-btn">
+            <a href="">          <amp-img style="width: 30px;" src="./assest/WhatsApp.svg"
+                width="1"
+                height="1"
+                layout="responsive"
+                alt="logo">
+              </amp-img></a>
+      
+            
+            <div >
+                <p class="f-s-14 f-s-i f-w-500">Get Your 1st Private <br/> Consultation + Call Free</p>
+                <div style="padding:15px" class=" blue-bg f-s-12 f-s-i f-w-500 button">Get Your 1st Consultation Free</div>
+            </div>
+      
+        </div>
         <header>
             <nav>
                 <div class="logo-wrapper">
@@ -1009,7 +1050,7 @@
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 03 : 6 weeks</h3>
+                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 3 : 6 weeks</h3>
                             <h4 class="f-w-500 f-s-14 f-s-r">
 
 
