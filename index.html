@@ -1,5 +1,5 @@
 <!doctype html>
-<html amp lang="en">
+<html amp lang="en" data-ampdevmode>
 
 <head>
     <meta charset="utf-8">
@@ -7,12 +7,15 @@
     <title>OneCare - A Chain of Smart Diabetes Clinics</title>
     <meta name="amp-script-src" content="sha384-AGfIK3xyyrcRWR-yI0HPk91gLZag7-SfA97XEQPAr6URvgIR5UqO5YALuid0V-7t">
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-base-carousel"
         src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
-
+  
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
     <style amp-boilerplate>
@@ -90,10 +93,8 @@
             margin: 0;
             padding: 0;
             -webkit-font-smoothing: antialiased;
-
             box-sizing: border-box;
-
-            font-family: "Montserrat", sans-serif;
+            font-family: 'Lato';
         }
 
         #container {
@@ -225,7 +226,7 @@
 
         .logo {
             margin-right: 15px;
-            width: 140px;
+            width: 185px;
         }
 
         #form-section #form {
@@ -440,14 +441,14 @@
 
         .dots {
             position: relative;
-            top: -65px;
+            top: -47px;
             text-align: center;
         }
 
         .dots li {
             width: 13px;
             height: 13px;
-            margin: 13px;
+            margin: 5px;
             border-radius: 10px;
             border: 1px solid rgba(0, 0, 0, 0.3);
             background-color: white;
@@ -559,17 +560,23 @@
             width: 45%;
         }
         }
+        #loader{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
     </style>
 
 </head>
 
 <body>
+   
     <div id="container">
         <header>
             <nav>
                 <div class="logo-wrapper">
                     <a href="/" class="logo">
-                        <amp-img src="./assest/OneCare_Logo-03_3.webp" width="3.2" height="1" layout="responsive"
+                        <amp-img src="./assest/logo.svg" width="3.2" height="1" layout="responsive"
                             alt="logo">
                         </amp-img>
                     </a>
@@ -593,9 +600,9 @@
                             <div>
                                 <h1>Anup khees<br /> <span style="font-weight: 600;">Age-35 yrs</span> </h1>
 
-                                <p>My blood sugar level came down to 92/115 and my medicine dosage also got reduced to
+                                <p>My blood sugar level came down to 92/115 and my<br/> medicine dosage also got reduced to
                                     half
-                                    and I'm very sure that it will stop completely in some time. </p>
+                                    and<br/> I'm very sure that it will stop completely in some time. </p>
                                 <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
                                     <h4 class="center-txt">Book a Doctor Consultation</h4>
                                 </div>
@@ -614,8 +621,8 @@
 
                                 <h1 class="orange-txt">Live a life beyond diabetes,<br /> starting today.</h1>
 
-                                <p>Our team includes leading diabetologists, endocrinologists, diabetes educators,
-                                    dieticians, health coaches all working with you to build a personalised care plan
+                                <p>Our team includes leading diabetologists,<br /> endocrinologists, diabetes educators,
+                                    dieticians, <br />health coaches all working with you to build a<br /> personalised care plan
                                     specific to your need. </p>
                                 <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
                                     <h4 class="center-txt">Book a Doctor Consultation</h4>
@@ -634,7 +641,7 @@
                             <div>
                                 <h1>Don't just fight diabetes,<br /> understand & manage it.</h1>
 
-                                <p>Diabetes care is unique to everyone. Beat it with the Right Approach that works for
+                                <p>Diabetes care is unique to everyone. Beat it with the <br /> Right Approach that works for
                                     you.
                                 </p>
                                 <div class="blue-bg" style="padding: 6px; border-radius: 6px;">
@@ -665,6 +672,7 @@
             </div>
         </section>
 
+       
         <section id="form-section">
 
 
@@ -681,13 +689,12 @@
 
 
 
-
-
+                    
                 <amp-script width="300" height="50" script="hello-world">
                     <div style="display: flex; justify-content: space-between;">
                         <div style="    display: flex;
                         align-items: center;">
-                            <input type="checkbox" id="Online" name=" Consultation" value="Online" checked>
+                            <input type="checkbox" id="Online" name="Consultation" value="Online" checked>
                             <label style="font-size: 12px;" for="Online">Online Consultation</label>
                         </div>
 
@@ -702,18 +709,16 @@
 
                 <!-- Add [target="amp-script"] to the <script> element. -->
                 <script id="hello-world" type="text/plain" target="amp-script">
-                    const btn = document.getElementsByName('Consultation');
-                    btn.addEventListener('change', function(){
-                   var v= $(this).value
-                   console.log(v)
+                  var checkboxes = document.querySelectorAll('input[type=checkbox][name=Consultation]');
+                  checkboxes.addEventListener('change', () => {
+                    console.log("ok")
                     });
-
                  
                   </script>
                 <input class="blue-bg button" type="submit" value="SUBMIT">
                 <div submitting style="position: absolute; background-color: gray;">
                     <template type="amp-mustache">
-                        MESSAGE OR LOADING GIF HERE
+               
                     </template>
                 </div>
                 <div submit-success>
@@ -1664,7 +1669,7 @@
             <nav>
                 <div class="logo-wrapper">
                     <a href="/" class="logo">
-                        <amp-img src="./assest/OneCare_Logo-03_3.webp" width="3.2" height="1" layout="responsive"
+                        <amp-img src="./assest/logo.svg" width="3.2" height="1" layout="responsive"
                             alt="logo">
                         </amp-img>
                     </a>
