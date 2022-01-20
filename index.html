@@ -9,13 +9,15 @@
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:ital,wght@1,700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:ital,wght@1,700&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-base-carousel"
         src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
-  
+
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
     <style amp-boilerplate>
@@ -104,46 +106,19 @@
         }
 
         h1 {
-
-            
-            font-style: normal;
-            line-height: 29px;
             letter-spacing: 0em;
             margin: 10px 0px;
         }
 
         h2 {
-          
-            font-style: normal;
-            line-height: 21px;
             margin: 10px 0px;
-            letter-spacing: 0em;
-        }
-
-        p {
-       
-            font-style: normal;
-      
-            line-height: 15px;
             letter-spacing: 0em;
         }
 
         h3 {
-       
-            font-style: normal;
-           
-            line-height: 18px;
-            letter-spacing: 0em;
             margin: 10px 0px;
         }
 
-        h4 {
-           
-            font-style: normal;
-    
-            line-height: 18px;
-            letter-spacing: 0em;
-        }
 
         .blu-txt {
             color: #28B1DA;
@@ -186,41 +161,59 @@
             align-items: flex-start;
             justify-content: flex-start;
         }
-        .f-s-30{
+
+        .f-s-30 {
             font-size: 30px;
+            line-height: 36px;
         }
-        .f-s-24{
+
+        .f-s-24 {
             font-size: 24px;
+            line-height: 30px;
         }
-        .f-s-18{
+
+        .f-s-18 {
             font-size: 18px;
+            line-height: 23px;
         }
-        .f-s-14{
+
+        .f-s-14 {
             font-size: 14px;
-        }    .f-s-12{
-            font-size: 12px;
+            line-height: 17px;
         }
-        .f-w-400{
+
+        .f-s-12 {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        .f-w-400 {
             font-weight: 400;
         }
-        .f-w-700{
+
+        .f-w-700 {
             font-weight: 700;
-            
+
         }
-        .f-w-600{
+
+        .f-w-600 {
             font-weight: 600;
-            
+
         }
-        .f-w-500{
+
+        .f-w-500 {
             font-weight: 500;
-            
+
         }
-        .f-s-i{
+
+        .f-s-i {
             font-family: 'Inter'
         }
-        .f-s-r{
+
+        .f-s-r {
             font-family: 'Roboto'
         }
+
         header {
             width: 100%;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -582,18 +575,21 @@
             border-radius: 18px;
             box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
         }
+
         @media screen and (max-width:400px) {
             .timeline ul li:nth-child(odd) .time {
-            position: relative;
-            top: -140px;
-            padding: 5px;
-            right: -175px;
+                position: relative;
+                top: -140px;
+                padding: 5px;
+                right: -175px;
+            }
+
+            .timeline ul li {
+                width: 45%;
+            }
         }
-        .timeline ul li {
-            width: 45%;
-        }
-        }
-        #loader{
+
+        #loader {
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -603,14 +599,13 @@
 </head>
 
 <body>
-   
+
     <div id="container">
         <header>
             <nav>
                 <div class="logo-wrapper">
                     <a href="/" class="logo">
-                        <amp-img src="./assest/logo.svg" width="3.2" height="1" layout="responsive"
-                            alt="logo">
+                        <amp-img src="./assest/logo.svg" width="3.2" height="1" layout="responsive" alt="logo">
                         </amp-img>
                     </a>
 
@@ -625,17 +620,18 @@
         <section id="top">
 
             <div>
-                <amp-base-carousel auto-advance="true" auto-advance-interval="3000" id="carouselID" height="500" layout="fixed-height" visible-count="1"
-                    advance-count="1" controls="never"
+                <amp-base-carousel auto-advance="true" auto-advance-interval="3000" id="carouselID" height="500"
+                    layout="fixed-height" visible-count="1" advance-count="1" controls="never"
                     on="slideChange: SelectorID.toggle(index=event.index, value=true)">
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
-                                <h1 class="f-w-700 f-s-30">Anup khees<br /> <span >Age-35 yrs</span> </h1>
+                                <h1 class="f-w-700 f-s-30">Anup khees<br /> <span>Age-35 yrs</span> </h1>
 
-                                <p class="f-s-14 f-w-400">My blood sugar level came down to 92/115 and my<br/> medicine dosage also got reduced to
+                                <p class="f-s-14 f-w-400">My blood sugar level came down to 92/115 and my<br /> medicine
+                                    dosage also got reduced to
                                     half
-                                    and<br/> I'm very sure that it will stop completely in some time. </p>
+                                    and<br /> I'm very sure that it will stop completely in some time. </p>
                                 <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
                                     <h4 class="f-s-i f-w-700 center-txt">Book a Doctor Consultation</h4>
                                 </div>
@@ -652,10 +648,13 @@
                         <div class="slide">
                             <div>
 
-                                <h1 class="f-s-30 f-w-700 orange-txt">Live a life beyond diabetes,<br /> starting today.</h1>
+                                <h1 class="f-s-30 f-w-700 orange-txt">Live a life beyond diabetes,<br /> starting today.
+                                </h1>
 
-                                <p class="f-s-14 f-w-400">Our team includes leading diabetologists,<br /> endocrinologists, diabetes educators,
-                                    dieticians, <br />health coaches all working with you to build a<br /> personalised care plan
+                                <p class="f-s-14 f-w-400">Our team includes leading diabetologists,<br />
+                                    endocrinologists, diabetes educators,
+                                    dieticians, <br />health coaches all working with you to build a<br /> personalised
+                                    care plan
                                     specific to your need. </p>
                                 <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
                                     <h4 class=" f-s-i center-txt">Book a Doctor Consultation</h4>
@@ -672,9 +671,11 @@
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
-                                <h1 class= 'f-s-30 f-w-700;'>Don't just fight diabetes,<br /> understand & manage it.</h1>
+                                <h1 class='f-s-30 f-w-700;'>Don't just fight diabetes,<br /> understand & manage it.
+                                </h1>
 
-                                <p class="f-s-14 f-w-400">Diabetes care is unique to everyone. Beat it with the <br /> Right Approach that works for
+                                <p class="f-s-14 f-w-400">Diabetes care is unique to everyone. Beat it with the <br />
+                                    Right Approach that works for
                                     you.
                                 </p>
                                 <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
@@ -705,7 +706,7 @@
             </div>
         </section>
 
-       
+
         <section id="form-section">
 
 
@@ -722,7 +723,7 @@
 
 
 
-                    
+
                 <amp-script width="300" height="50" script="hello-world">
                     <div style="display: flex; justify-content: space-between;">
                         <div style="    display: flex;
@@ -751,7 +752,7 @@
                 <input class="blue-bg button" type="submit" value="SUBMIT">
                 <div submitting style="position: absolute; background-color: gray;">
                     <template type="amp-mustache">
-               
+
                     </template>
                 </div>
                 <div submit-success>
@@ -784,7 +785,8 @@
                         <h3 class="f-s-18 f-w-700 drk-blu-txt">
                             Step 1
                         </h3>
-                        <p class="f-s-14 f-w-400">Meet your team of Expert diabetologists, Health counsellors & dieticians at OneCare Clinics
+                        <p class="f-s-14 f-w-400">Meet your team of Expert diabetologists, Health counsellors &
+                            dieticians at OneCare Clinics
                             and get expert analysis. </p>
                     </div>
                 </div>
@@ -803,7 +805,8 @@
                         <h3 class=" f-s-18 f-w-700 drk-blu-txt">
                             Step 1
                         </h3>
-                        <p class="f-s-14 f-w-400">Meet your team of Expert diabetologists, Health counsellors & dieticians at OneCare Clinics
+                        <p class="f-s-14 f-w-400">Meet your team of Expert diabetologists, Health counsellors &
+                            dieticians at OneCare Clinics
                             and get expert analysis. </p>
                     </div>
                 </div>
@@ -820,7 +823,8 @@
                         <h3 class="f-s-18 f-w-700 drk-blu-txt">
                             Step 1
                         </h3>
-                        <p class="f-s-14 f-w-400">Meet your team of Expert diabetologists, Health counsellors & dieticians at OneCare Clinics
+                        <p class="f-s-14 f-w-400">Meet your team of Expert diabetologists, Health counsellors &
+                            dieticians at OneCare Clinics
                             and get expert analysis. </p>
                     </div>
                 </div>
@@ -832,7 +836,8 @@
         </section>
 
         <section id="Diabetologists">
-            <h2 class=" f-s-24 f-w-700 center-txt ">Best Endocrinologists & Diabetologists<span class="orange-txt">in Bangalore</span>
+            <h2 class=" f-s-24 f-w-700 center-txt ">Best Endocrinologists & Diabetologists<span class="orange-txt">in
+                    Bangalore</span>
             </h2>
             <div id="Diabetologists-wrapper">
 
@@ -841,7 +846,8 @@
                 <div>
 
                     <div class="Diabetologists-img-wrapper">
-                        <amp-img src="./assest/doc1.webp" width="1" height="1" layout="responsive" alt="logo"  style="border-radius: 30px;">
+                        <amp-img src="./assest/doc1.webp" width="1" height="1" layout="responsive" alt="logo"
+                            style="border-radius: 30px;">
                         </amp-img>
                     </div>
 
@@ -852,7 +858,8 @@
                             Associated with Narayana Hrudayalaya</h4>
                         <div style="display: flex;">
                             <div style="width: 6%;margin-right: 5px;">
-                                <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive" alt="logo">
+                                <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive"
+                                    alt="logo">
                                 </amp-img>
                             </div>
                             <h4 class="f-s-12 f-w-500">98% Approval on Practo</h4>
@@ -868,16 +875,19 @@
                 <div>
 
                     <div class="Diabetologists-img-wrapper">
-                        <amp-img src="./assest/doc2png.webp" width="1" height="1" layout="responsive" alt="logo"  style="border-radius: 30px;">
+                        <amp-img src="./assest/doc2png.webp" width="1" height="1" layout="responsive" alt="logo"
+                            style="border-radius: 30px;">
                         </amp-img>
                     </div>
 
                     <div class="doc-det">
-                        <h4 class="f-s-14 f-w-400 f-s-r"> Dr. C Siva Rama Krishna<br /> MD, M.H. Sc.<br /> (Diabetology)</h4>
+                        <h4 class="f-s-14 f-w-400 f-s-r"> Dr. C Siva Rama Krishna<br /> MD, M.H. Sc.<br /> (Diabetology)
+                        </h4>
                         <h4 class=" f-s-12 f-w-400 f-s-r orange-txt"> 10+ years of experience</h4>
                         <div style="display: flex;">
                             <div style="width: 6%;margin-right: 5px;">
-                                <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive" alt="logo" >
+                                <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive"
+                                    alt="logo">
                                 </amp-img>
                             </div>
                             <h4 class="f-s-12 f-w-500">98% Approval on Practo</h4>
@@ -890,7 +900,8 @@
                 <div>
 
                     <div class="Diabetologists-img-wrapper">
-                        <amp-img src="./assest/doc3.webp" width="1" height="1" layout="responsive" alt="logo" style="border-radius: 30px;">
+                        <amp-img src="./assest/doc3.webp" width="1" height="1" layout="responsive" alt="logo"
+                            style="border-radius: 30px;">
                         </amp-img>
                     </div>
 
@@ -942,7 +953,7 @@
                             <div class="flex">
                                 <div style="width: 60px; margin: 10px;">
                                     <amp-img src="./assest/pink1.webp" width="1" height="1.7" layout="responsive"
-                                        alt="">
+                                        alt="logo">
                                     </amp-img>
                                 </div>
                                 <div>
@@ -955,13 +966,13 @@
 
                         </div>
                         <div class="time">
-                            <h3  class="f-w-500 f-s-14 f-s-r">Duration 0 : 1 week</h3>
-                            <h4  class="f-w-700 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 0 : 1 week</h3>
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
                                 We will begin the programme by getting to know you, your lifestyle, and your eating
                                 habits.</h4>
                             <br>
-                            <h4  class="f-w-700 f-s-14 f-s-r">
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
                                 You acquire practical knowledge about how we are going to fight your diabetes</h4>
                         </div>
@@ -980,21 +991,21 @@
                                 <div>
                                     <h3 class="f-w-700 f-s-14 f-s-r pink-txt">A Fruitful <br /> Commitment</h3>
                                     <br />
-                                    <h3 class=" f-w-700 f-s-14 pink-txt">Outcome</h3>
+                                    <h3 class=" f-w-700 f-s-14 f-s-r pink-txt">Outcome</h3>
                                 </div>
                             </div>
 
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-500 f-s-14 f-s-r">Duration 03 : 6 weeks</h3>
-                            <h4 class="f-w-700 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 03 : 6 weeks</h3>
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
 
 
                                 We will help you replace your harmful lifestyle habits with healthy ones.</h4>
                             <br>
-                            <h4  class="f-w-700 f-s-14 f-s-r">
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
 
                                 From weight reduction to energized physique, your body starts to enjoy a positive
@@ -1012,26 +1023,26 @@
                                     </amp-img>
                                 </div>
                                 <div>
-                                    <h3 class=" f-w-700 f-s-14 pink-txt">Accelerated
+                                    <h3 class=" f-w-700 f-s-14 f-s-r pink-txt">Accelerated
                                         <br /> Recovery
                                     </h3>
                                     <br />
-                                    <h3 class=" f-w-700 f-s-14 pink-txt">Outcome</h3>
+                                    <h3 class=" f-w-700 f-s-14 f-s-r f-s-r pink-txt">Outcome</h3>
                                 </div>
                             </div>
 
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-500 f-s-14 f-s-r">Duration 8 : 12 weeks</h3>
-                            <h4 class="f-w-700 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 8 : 12 weeks</h3>
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
 
 
                                 Provides an extensive treatment plan to help control your diabetes.
                             </h4>
                             <br>
-                            <h4 class="f-w-700 f-s-14 f-s-r">
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
                                 As our detox plan lowers your blood sugar, you will notice your dependence on medication
                                 starting to wane.</h4>
@@ -1050,25 +1061,25 @@
                                     </amp-img>
                                 </div>
                                 <div>
-                                    <h3 class=" f-w-700 f-s-14 pink-txt">Charting A
+                                    <h3 class=" f-w-700 f-s-14 f-s-r pink-txt">Charting A
                                         <br />Better Life
                                     </h3>
                                     <br />
-                                    <h3 class=" f-w-700 f-s-14 pink-txt">Outcome</h3>
+                                    <h3 class=" f-w-700 f-s-14 f-s-r pink-txt">Outcome</h3>
                                 </div>
                             </div>
 
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-500 f-s-14 f-s-r">Duration 3 : 8 weeks</h3>
-                            <h4 class="f-w-700 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 3 : 8 weeks</h3>
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
 
 
                                 Here, you will focus on muscle building and strengthening.</h4>
                             <br>
-                            <h4 class="f-w-700 f-s-14 f-s-r">
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
                                 Building body muscles, and a sustained feeling of absolute wellness. </h4>
                         </div>
@@ -1084,19 +1095,19 @@
                                     </amp-img>
                                 </div>
                                 <div>
-                                    <h3 class=" f-w-700 f-s-14 pink-txt">Keeping It
+                                    <h3 class=" f-w-700 f-s-14 f-s-r pink-txt">Keeping It
                                         <br /> Going
                                     </h3>
                                     <br />
-                                    <h3 class=" f-w-700 f-s-14 pink-txt">Outcome</h3>
+                                    <h3 class=" f-w-700 f-s-14 f-s-r pink-txt">Outcome</h3>
                                 </div>
                             </div>
 
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-500 f-s-14 f-s-r">Duration 6 : 8 weeks</h3>
-                            <h4 class="f-w-700 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 6 : 8 weeks</h3>
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
 
 
@@ -1104,7 +1115,7 @@
                                 sustaining it.
                             </h4>
                             <br>
-                            <h4 class="f-w-700 f-s-14 f-s-r">
+                            <h4 class="f-w-500 f-s-14 f-s-r">
 
 
                                 With healthy habits already ingrained, you can keep diabetes under control forever.
@@ -1156,7 +1167,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <p class=" f-s-14 f-w-400  gray-txt">I came all the way from Gulbarga I am Very Happy with Service.
+                                <p class=" f-s-14 f-w-400  gray-txt">I came all the way from Gulbarga I am Very Happy
+                                    with Service.
                                     Highly professional staff and Doctor thanks to Dr Vikram and Vasu</p>
                             </div>
                         </div>
@@ -1173,7 +1185,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <p class=" f-s-14 f-w-400 gray-txt">A great place for total Diabetes care. The front desk and customer
+                                <p class=" f-s-14 f-w-400 gray-txt">A great place for total Diabetes care. The front
+                                    desk and customer
                                     care explains the program in detail. Doctors and Dieticians are well qualified.
                                     No delay in follow up consultations too! Would recommend to my family n friends.</p>
                             </div>
@@ -1193,7 +1206,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <p class=" f-s-14 f-w-400 gray-txt">From the booking to the consultation the staff was very helpful. The
+                                <p class=" f-s-14 f-w-400 gray-txt">From the booking to the consultation the staff was
+                                    very helpful. The
                                     consultation was so insightful. The doctor spent ample time and also answered all my
                                     questions. I felt heard and satisfied with his treatment plan. He also made very
                                     easy suggestions which has motivated me. </p>
@@ -1212,7 +1226,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <p class=" f-s-14 f-w-400 gray-txt">The doctor is detail-oriented and listens patiently to what we have to discuss and
+                                <p class=" f-s-14 f-w-400 gray-txt">The doctor is detail-oriented and listens patiently
+                                    to what we have to discuss and
                                     share. He shows a great friendly gesture which encourages to discuss more about the
                                     problems and take proper feedback. </p>
                             </div>
@@ -1236,7 +1251,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <p class=" f-s-14 f-w-400 gray-txt">Dr. Basavaraj always takes the time to make the patient feel at ease. Instead of just
+                                <p class=" f-s-14 f-w-400 gray-txt">Dr. Basavaraj always takes the time to make the
+                                    patient feel at ease. Instead of just
                                     prescribing the medicine, he explains what it is for and why it is important. In
                                     case of any changes too, he explains why he is making the change and what we can
                                     expect out of it which helps in creating a lot more confidence in him. The best
@@ -1257,7 +1273,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <p class=" f-s-14 f-w-400 gray-txt">Doctor Basavaraj is a brilliant doctor, when I was struggling with medication for my
+                                <p class=" f-s-14 f-w-400 gray-txt">Doctor Basavaraj is a brilliant doctor, when I was
+                                    struggling with medication for my
                                     mother for high diabetes after having her operation, we met Dr Basavaraj. Within a
                                     week he solved the problem to a large extent. My mother likes to visit The OneCare
                                     Diabetes clinic for his patience and polite approach to handle patient queries. </p>
@@ -1276,7 +1293,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <p class=" f-s-14 f-w-400 gray-txt">I found the doctor very cost-effective. The consultation was so insightful and
+                                <p class=" f-s-14 f-w-400 gray-txt">I found the doctor very cost-effective. The
+                                    consultation was so insightful and
                                     helpful that everything was worth the money. The doctor was also very good and his
                                     suggestions were doable. Thanks to OneCare Diabetes Clinic.</p>
                             </div>
@@ -1315,7 +1333,8 @@
                                     </amp-img>
                                 </div>
                                 <div>
-                                    <p class="f-s-14 f-w-400">Opposit to, Sobha Quartz, 227, Ground Floor, Off, Outer Ring Rd, Green Glen
+                                    <p class="f-s-14 f-w-400">Opposit to, Sobha Quartz, 227, Ground Floor, Off, Outer
+                                        Ring Rd, Green Glen
                                         Layout,
                                         Bellandur, Bengaluru, Karnataka 560103
                                     </p>
@@ -1368,7 +1387,8 @@
                                     </amp-img>
                                 </div>
                                 <div>
-                                    <p class="f-s-14 f-w-400">No. 81, ST Bed Entrance, off 80 Feet Road, Koramangala 4th Block, Koramangala,
+                                    <p class="f-s-14 f-w-400">No. 81, ST Bed Entrance, off 80 Feet Road, Koramangala 4th
+                                        Block, Koramangala,
                                         Bengaluru, Karnataka 560034
 
                                     </p>
@@ -1420,7 +1440,8 @@
                                     </amp-img>
                                 </div>
                                 <div>
-                                    <p class="f-s-14 f-w-400">505/1 1st A Cross Indiranagar 1st Stage (Near CMH Hospital/Costa Coffee),
+                                    <p class="f-s-14 f-w-400">505/1 1st A Cross Indiranagar 1st Stage (Near CMH
+                                        Hospital/Costa Coffee),
                                         Bengaluru, Karnataka 560038
 
                                     </p>
@@ -1476,7 +1497,7 @@
                     </div>
                     <div style="margin: 20px; flex:1;">
                         <amp-img src="./assest/istockphoto-1294132648-612x612 1.webp" width="1.3" height="1"
-                            layout="responsive" alt="">
+                            layout="responsive" alt="logo">
                         </amp-img>
                     </div>
 
@@ -1507,7 +1528,7 @@
                     </div>
                     <div class="flex tick-wrapper">
 
-                        <p class="f-s-14 f-w-400" style="text-align: end;">Top endocrinologists and <br /> Diabetologists</p>
+                        <p class="f-s-14 f-w-400">Top endocrinologists and <br /> Diabetologists</p>
                         <div>
                             <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
                             </amp-img>
@@ -1522,14 +1543,13 @@
 
                     <div class="flex tick-wrapper">
 
-                        <p class="f-s-14 f-w-400"  style="text-align: end;">Personalized & Sustainable <br /> Diabetes control program</p>
+                        <p class="f-s-14 f-w-400">Personalized & Sustainable <br /> Diabetes control program</p>
                         <div>
                             <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                         <div>
-                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive"
-                                alt="logo">
+                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                     </div>
@@ -1538,14 +1558,13 @@
 
                     <div class="flex tick-wrapper">
 
-                        <p class="f-s-14 f-w-400" style="text-align: end;">Smart & remote monitoring by <br />OneCare mobile app</p>
+                        <p class="f-s-14 f-w-400">Smart & remote monitoring by <br />OneCare mobile app</p>
                         <div>
                             <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                         <div>
-                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive"
-                                alt="logo">
+                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                     </div>
@@ -1554,14 +1573,13 @@
 
                     <div class="flex tick-wrapper">
 
-                        <p class="f-s-14 f-w-400" style="text-align: end;">24*7 access to expert dietician</p>
+                        <p class="f-s-14 f-w-400">24*7 access to expert dietician</p>
                         <div>
                             <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                         <div>
-                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive"
-                                alt="logo">
+                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                     </div>
@@ -1570,14 +1588,13 @@
 
                     <div class="flex tick-wrapper">
 
-                        <p class="f-s-14 f-w-400" style="text-align: end;">Dedicated coach with free <br />Weekly Sessions</p>
+                        <p class="f-s-14 f-w-400">Dedicated coach with free <br />Weekly Sessions</p>
                         <div>
                             <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                         <div>
-                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive"
-                                alt="logo">
+                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                     </div>
@@ -1586,30 +1603,28 @@
 
                     <div class="flex tick-wrapper">
 
-                        <p class="f-s-14 f-w-400" style="text-align: end;">Free unlimited doctor <br /> Follow-ups</p>
+                        <p class="f-s-14 f-w-400">Free unlimited doctor <br /> Follow-ups</p>
                         <div>
                             <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                         <div>
-                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive"
-                                alt="logo">
+                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
                             </amp-img>
                         </div>
                     </div>
                     <div class="flex tick-wrapper">
 
-                        <p class="f-s-14 f-w-400" style="text-align: end;">
+                        <p class="f-s-14 f-w-400">
                             Focus on controlling & <br />Reversing Diabetes</p>
-                            <div>
-                                <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
-                                </amp-img>
-                            </div>
-                            <div>
-                                <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive"
-                                    alt="logo">
-                                </amp-img>
-                            </div>
+                        <div>
+                            <amp-img src="./assest/Ok.svg" width="1" height="1" layout="responsive" alt="logo">
+                            </amp-img>
+                        </div>
+                        <div>
+                            <amp-img src="./assest/Xbox X.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
+                            </amp-img>
+                        </div>
                     </div>
 
 
@@ -1702,8 +1717,7 @@
             <nav>
                 <div class="logo-wrapper">
                     <a href="/" class="logo">
-                        <amp-img src="./assest/logo.svg" width="3.2" height="1" layout="responsive"
-                            alt="logo">
+                        <amp-img src="./assest/logo.svg" width="3.2" height="1" layout="responsive" alt="logo">
                         </amp-img>
                     </a>
 
