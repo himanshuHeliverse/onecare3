@@ -269,11 +269,14 @@
             border: 1px solid gray;
         }
 
-        #form input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
+        #form input[type="radio"] {
+            border: 1px solid black;
+  padding: 8px;
+  -webkit-appearance: none;
         }
-
+        #form input[type="radio"]:checked{
+         background-color: #28B1DA;
+        }
         .button {
             border: none;
             font-weight: 700;
@@ -415,7 +418,7 @@
 
         .slide>div:last-child {
             position: relative;
-            top: 190px;
+            top: 240px;
         }
 
         #location div h1 {
@@ -429,7 +432,7 @@
 
         .slide>div:first-child {
             display: flex;
-            padding: 25px;
+            padding: 0px 20px;
             /* width: 85%; */
             height: 200px;
             justify-content: space-between;
@@ -620,7 +623,7 @@
         <section id="top">
 
             <div>
-                <amp-base-carousel auto-advance="true" auto-advance-interval="3000" id="carouselID" height="500"
+                <amp-base-carousel auto-advance="true" auto-advance-interval="3000" id="carouselID" height="550"
                     layout="fixed-height" visible-count="1" advance-count="1" controls="never"
                     on="slideChange: SelectorID.toggle(index=event.index, value=true)">
                     <div class="slide-wrapper">
@@ -682,8 +685,8 @@
                                     <h4 class=" f-s-i center-txt">Book a Doctor Consultation</h4>
                                 </div>
                             </div>
-                            <div style="    width: 332px;;
-                            left: 23%;">
+                            <div style="    width: 315px;;
+                            left: 27%; top: 256px;">
                                 <amp-img src="./assest/slack-imgs-1 1.webp" width="1.5" height="1.3" layout="responsive"
                                     alt="">
                                 </amp-img>
@@ -728,13 +731,13 @@
                     <div style="display: flex; justify-content: space-between;">
                         <div style="    display: flex;
                         align-items: center;">
-                            <input type="checkbox" id="Online" name="Consultation" value="Online" checked>
+                            <input type="radio" id="Online" name="Consultation" value="Online" checked>
                             <label style="font-size: 12px;" for="Online">Online Consultation</label>
                         </div>
 
                         <div style="    display: flex;
                         align-items: center;">
-                            <input type="checkbox" id="Clinical" name="Consultation" value="Clinical">
+                            <input type="radio" id="Clinical" name="Consultation" value="Clinical">
                             <label style="font-size: 12px;" for="Clinical">Clinical Consultation</label>
                         </div>
 
