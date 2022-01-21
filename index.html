@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:ital,wght@1,700&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
+
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
@@ -223,9 +224,10 @@
             margin: 10px 0px;
         }
 
-        footer{
+        footer {
             background-color: white;
         }
+
         header {
             width: 100%;
             background-color: white;
@@ -609,13 +611,11 @@
 
         #sticky-btn {
             display: flex;
-            position: fixed;
-            z-index: 5;
+            position: sticky;
             bottom: 0;
             flex-direction: column;
-            width: 430px;
-            margin: auto;
-            align-items: flex-end;
+            justify-content: center;
+
         }
 
         #sticky-btn>div>a {
@@ -625,16 +625,11 @@
 
         }
 
-        #sticky-btn>div {
-            width: 100%;
-            justify-content: center;
+        #sticky-btn>div:last-child {
             background-color: white;
-
             display: flex;
-
+            padding: 10px 20px;
             align-items: center;
-            padding: 18px;
-
         }
 
         a {
@@ -645,29 +640,16 @@
 
 </head>
 
+
+
+
 <body>
-
-
-
 
     <div id="container">
 
-        <div id="sticky-btn">
-            <a href=" https://wa.me/918951893293">
-                <amp-img style="width: 50px;" src="./assest/WhatsApp.svg" width="1" height="1" layout="responsive"
-                    alt="logo">
-                </amp-img>
-            </a>
 
 
-            <div>
-                <p class="f-s-12 f-s-i f-w-500">Get Your 1st Private <br /> Consultation + Free Call </p>
-                <a href='' style="padding:15px" class=" blue-bg f-s-12 f-s-i f-w-500 button">Get Your 1st Consultation
-                    Free
-                </a>
-            </div>
 
-        </div>
         <header>
             <nav>
                 <div class="logo-wrapper">
@@ -879,8 +861,6 @@
         <section id="manage">
             <h2 class=" f-s-24 f-w-700 center-txt orange-txt">Manage your diabetes <br /> in 3 easy steps</h2>
             <div id="manage-wrapper">
-
-
                 <div>
                     <div class="manage-img-wrapper">
                         <amp-img src="./assest/manage1.svg" width="2" height="1" layout="responsive" alt="logo">
@@ -898,8 +878,6 @@
                             and get expert analysis. </p>
                     </div>
                 </div>
-
-
 
                 <div>
                     <div class="manage-img-wrapper">
@@ -936,9 +914,6 @@
                             and get expert analysis. </p>
                     </div>
                 </div>
-
-
-
 
             </div>
         </section>
@@ -1851,35 +1826,25 @@
             <div class="flex">
 
                 <div>
-<amp-img style="width: 80px; margin-right: 10px;" src="./assest/vccircle.svg"
-  width="1"
-  height="1"
-  layout="responsive"
-  alt="logo">
-</amp-img>
+                    <amp-img style="width: 80px; margin-right: 10px;" src="./assest/vccircle.svg" width="1" height="1"
+                        layout="responsive" alt="logo">
+                    </amp-img>
                 </div>
                 <div>
-                    <amp-img style="width: 110px;  margin-right: 10px;" src="./assest/logo_yourstory 1.svg"
-                      width="1"
-                      height="1"
-                      layout="responsive"
-                      alt="logo">
+                    <amp-img style="width: 110px;  margin-right: 10px;" src="./assest/logo_yourstory 1.svg" width="1"
+                        height="1" layout="responsive" alt="logo">
                     </amp-img>
-                                    </div>         <div>
-                                        <amp-img style="width: 100px;" src="./assest/EH-Logo-white 1.svg"
-                                          width="1"
-                                          height="1"
-                                          layout="responsive"
-                                          alt="logo">
-                                        </amp-img>
-                                                        </div>         <div>
-                                                            <amp-img style="width: 100px;" src="./assest/IndianStartupNews-logo 1.svg"
-                                                              width="1"
-                                                              height="1"
-                                                              layout="responsive"
-                                                              alt="logo">
-                                                            </amp-img>
-                                                                            </div>
+                </div>
+                <div>
+                    <amp-img style="width: 100px;" src="./assest/EH-Logo-white 1.svg" width="1" height="1"
+                        layout="responsive" alt="logo">
+                    </amp-img>
+                </div>
+                <div>
+                    <amp-img style="width: 100px;" src="./assest/IndianStartupNews-logo 1.svg" width="1" height="1"
+                        layout="responsive" alt="logo">
+                    </amp-img>
+                </div>
             </div>
         </section>
         <footer>
@@ -1897,10 +1862,32 @@
                 </div>
             </nav>
         </footer>
-        <div style=" padding: 10px; height: 150px;">
+        <div style=" padding: 10px;">
             <h4 class="center-txt f-s-14 f-w-400">
                 © 2021, OneCare. All Rights Reserved
             </h4>
+        </div>
+        <div id="sticky-btn">
+<div style="    display: flex;
+flex-direction: column;
+align-items: flex-end;">
+    <a href=" https://wa.me/918951893293">
+        <amp-img style="width: 50px;" src="./assest/WhatsApp.svg" width="1" height="1" layout="responsive"
+            alt="logo">
+        </amp-img>
+    </a>
+
+</div>
+       
+
+
+            <div class="flex">
+                <p class="f-s-12 f-s-i f-w-500">Get Your 1st Private <br /> Consultation + Free Call </p>
+                <a href='' style="padding:15px" class=" blue-bg f-s-12 f-s-i f-w-500 button">Get Your 1st Consultation
+                    Free
+                </a>
+            </div>
+
         </div>
     </div>
 </body>
