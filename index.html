@@ -176,6 +176,7 @@
             font-size: 18px;
             line-height: 23px;
         }
+
         .f-s-16 {
             font-size: 16px;
             line-height: 21px;
@@ -218,9 +219,10 @@
             font-family: 'Roboto'
         }
 
-        .m-t-10{
+        .m-t-10 {
             margin: 10px 0px;
         }
+
         header {
             width: 100%;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -258,7 +260,7 @@
 
         .logo {
             margin-right: 15px;
-            width: 185px;
+            width: 165px;
         }
 
         #form-section #form {
@@ -381,8 +383,8 @@
         }
 
         .over-say-review-img-wrapper {
-            width: 20%;
-            padding: 10px;
+            width: 22%;
+            padding: 20px;
             margin: auto;
             border: 1px solid #C4C4C4;
             border-radius: 100px;
@@ -425,10 +427,6 @@
             height: 100%;
         }
 
-        .slide>div:last-child {
-            position: relative;
-            top: 240px;
-        }
 
         #location div h1 {
             margin-left: 20px;
@@ -466,6 +464,7 @@
             padding: 10px 40px;
             background-color: white;
             margin: 20px 0px;
+            justify-content: space-between;
             border-radius: 10px;
             box-shadow: 0px 20px 40px 0px #EEF0F2;
         }
@@ -496,7 +495,7 @@
         .dots li[option][selected] {
             outline: 0px solid rgba(0, 0, 0, 0.7);
             border: 1px solid #28B1DA;
-            background: #bcced3;
+            background: #28B1DA;
         }
 
         .tick-wrapper {
@@ -513,12 +512,14 @@
             width: 20px;
             margin: 10px 0px;
         }
+
         #tick-head {
             display: flex;
             justify-content: end;
             align-items: center;
             margin-right: 20px;
         }
+
         .timeline {
             position: relative;
             margin: 30px auto;
@@ -542,10 +543,8 @@
         }
 
         .timeline ul li:nth-child(odd) {
-            /* float: left;
-             text-align:right;  */
-            /* margin: 20px 0px; */
-            /* clear: both; */
+
+            clear: both;
         }
 
 
@@ -610,7 +609,8 @@
             z-index: 5;
             bottom: 0;
             flex-direction: column;
-
+            width: 430px;
+            margin: auto;
             align-items: flex-end;
         }
 
@@ -618,12 +618,12 @@
             padding: 15px;
             border-radius: 10px;
             margin-left: 10px;
-            
+
         }
 
         #sticky-btn>div {
             width: 100%;
-
+            justify-content: center;
             background-color: white;
 
             display: flex;
@@ -632,9 +632,10 @@
             padding: 18px;
 
         }
-        a{
-        text-decoration: none;
-        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 
@@ -656,8 +657,9 @@
 
 
             <div>
-                <p class="f-s-14 f-s-i f-w-500">Get Your 1st Private <br /> Consultation + Free Call </p>
-                <a  href=''style="padding:15px" class=" blue-bg f-s-12 f-s-i f-w-500 button">Get Your 1st Consultation Free
+                <p class="f-s-12 f-s-i f-w-500">Get Your 1st Private <br /> Consultation + Free Call </p>
+                <a href='' style="padding:15px" class=" blue-bg f-s-12 f-s-i f-w-500 button">Get Your 1st Consultation
+                    Free
                 </a>
             </div>
 
@@ -672,7 +674,8 @@
 
                 </div>
                 <div>
-                    <h3 class="f-s-16 f-w-500 gray-txt web"> A Chain<BR /> of Smart Diabetes Clinics</h3>
+                    <h3 style="margin: 0;" class=" f-s-16 f-w-500 gray-txt"> A Chain<BR /> of Smart Diabetes Clinics
+                    </h3>
 
                 </div>
             </nav>
@@ -681,13 +684,30 @@
         <section id="top">
 
             <div>
-                <amp-base-carousel auto-advance="true" auto-advance-interval="3000" id="carouselID" height="550"
+                <amp-base-carousel auto-advance="true" auto-advance-interval="3000000000" id="carouselID" height="550"
                     layout="fixed-height" visible-count="1" advance-count="1" controls="never"
                     on="slideChange: SelectorID.toggle(index=event.index, value=true)">
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
                                 <h1 class="f-w-700 f-s-30">Anup khees<br /> <span>Age-35 yrs</span> </h1>
+                                <div class=" m-t-10 flex">
+                                    <div class="flex" style="margin-right: 15px;
+                                ">
+                                        <amp-img style="width: 20px;" src="./assest/Rh+.svg" width="1" height="1"
+                                            layout="responsive" alt="logo">
+                                        </amp-img>
+                                        <h4>92/115</h4>
+                                    </div>
+
+
+                                    <div class="flex">
+                                        <amp-img style="width: 20px;" src="./assest/oill.svg" width="1" height="1"
+                                            layout="responsive" alt="logo">
+                                        </amp-img>
+                                        <h4>50% Reduction</h4>
+                                    </div>
+                                </div>
 
                                 <p class="f-s-14 f-w-400">My blood sugar level came down to 92/115 and my<br /> medicine
                                     dosage also got reduced to
@@ -697,8 +717,8 @@
                                     <a href="" class="f-s-i f-w-700 blue-bg center-txt">Book a Doctor Consultation</a>
                                 </div>
                             </div>
-                            <div style="width: 320px; left:25%">
-                                <amp-img src="./assest/1_HEoLBLidT2u4mhJ0oiDgig 2 (1).webp" width="3" height="2.7"
+                            <div style="width: 400px; position: relative; top: 170px; left:15%">
+                                <amp-img src="./assest/1_HEoLBLidT2u4mhJ0oiDgig 2.svg" width="3" height="2.7"
                                     layout="responsive" alt="">
                                 </amp-img>
                             </div>
@@ -721,8 +741,11 @@
                                     <a href="" class=" blue-bg  f-w-700 f-s-i center-txt">Book a Doctor Consultation</a>
                                 </div>
                             </div>
-                            <div style="width: 437px;">
-                                <amp-img src="./assest/istockphoto-1192489366-612x612 1.webp" width="1.5" height="1"
+                            <div style="    width: 437px;
+                            position: relative;
+                            top: 238px;
+                            left: 15%;">
+                                <amp-img src="./assest/istockphoto-1192489366-612x612 1.svg" width="1.5" height="1"
                                     layout="responsive" alt="">
                                 </amp-img>
                             </div>
@@ -743,16 +766,36 @@
                                     <a href="" class="  f-w-700 blue-bg f-s-i center-txt">Book a Doctor Consultation</a>
                                 </div>
                             </div>
-                            <div style="    width: 315px;;
+                            <div style="  position: relative;  width: 315px;;
                             left: 27%; top: 256px;">
-                                <amp-img src="./assest/slack-imgs-1 1.webp" width="1.5" height="1.3" layout="responsive"
+                                <amp-img src="./assest/slack-imgs-1 1.svg" width="1.5" height="1.3" layout="responsive"
                                     alt="">
                                 </amp-img>
                             </div>
 
                         </div>
                     </div>
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div>
+                                <h1 class='f-s-30 f-w-700 orange-txt'>Skip the travel
+                                </h1>
 
+                                <p class="f-s-14 f-w-400">Take Online Doctor Consultation <br />
+                                    Private video consultation
+                                </p>
+                                <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
+                                    <a href="" class="  f-w-700 blue-bg f-s-i center-txt">Book a Doctor Consultation</a>
+                                </div>
+                            </div>
+                            <div style="   position: relative; width: 315px;;
+                            left: 27%; top: 256px;">
+                                <amp-img src="./assest/d.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
+                                </amp-img>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </amp-base-carousel>
                 <amp-selector id="SelectorID" on="select:carouselID.goToSlide(index=event.targetOption)"
@@ -761,7 +804,7 @@
                         <li option="0" selected></li>
                         <li option="1"></li>
                         <li option="2"></li>
-
+                        <li option="3"></li>
                     </ul>
                 </amp-selector>
             </div>
@@ -836,7 +879,7 @@
 
                 <div>
                     <div class="manage-img-wrapper">
-                        <amp-img src="./assest/manage1.webp" width="1.5" height="1" layout="responsive" alt="logo">
+                        <amp-img src="./assest/manage1.svg" width="2" height="1" layout="responsive" alt="logo">
                         </amp-img>
                     </div>
 
@@ -856,7 +899,7 @@
 
                 <div>
                     <div class="manage-img-wrapper">
-                        <amp-img src="./assest/manage2.webp" width="1.5" height="1" layout="responsive" alt="logo">
+                        <amp-img src="./assest/manage2.svg" width="2" height="1" layout="responsive" alt="logo">
                         </amp-img>
                     </div>
 
@@ -874,7 +917,7 @@
 
                 <div>
                     <div class="manage-img-wrapper">
-                        <amp-img src="./assest/manage3.webp" width="1.5" height="1" layout="responsive" alt="logo">
+                        <amp-img src="./assest/manage3.svg" width="2" height="1" layout="responsive" alt="logo">
                         </amp-img>
                     </div>
 
@@ -907,7 +950,7 @@
                 <div>
 
                     <div class="Diabetologists-img-wrapper">
-                        <amp-img src="./assest/doc1.webp" width="1" height="1" layout="responsive" alt="logo"
+                        <amp-img src="./assest/doc1.svg" width="1" height="1" layout="responsive" alt="logo"
                             style="border-radius: 30px;">
                         </amp-img>
                     </div>
@@ -936,7 +979,7 @@
                 <div>
 
                     <div class="Diabetologists-img-wrapper">
-                        <amp-img src="./assest/doc2png.webp" width="1" height="1" layout="responsive" alt="logo"
+                        <amp-img src="./assest/doc2.svg" width="1" height="1" layout="responsive" alt="logo"
                             style="border-radius: 30px;">
                         </amp-img>
                     </div>
@@ -944,7 +987,7 @@
                     <div class="doc-det">
                         <h4 class="f-s-14 f-w-400 f-s-r"> Dr. C Siva Rama Krishna<br /> MD, M.H. Sc.<br /> (Diabetology)
                         </h4>
-                        <h4 class=" f-s-12 f-w-400 f-s-r orange-txt m-t-10" > 10+ years of experience</h4>
+                        <h4 class=" f-s-12 f-w-400 f-s-r orange-txt m-t-10"> 10+ years of experience</h4>
                         <div class="flex">
                             <div style="width: 6%;margin-right: 5px;">
                                 <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive"
@@ -961,7 +1004,7 @@
                 <div>
 
                     <div class="Diabetologists-img-wrapper">
-                        <amp-img src="./assest/doc3.webp" width="1" height="1" layout="responsive" alt="logo"
+                        <amp-img src="./assest/doc3.svg" width="1" height="1" layout="responsive" alt="logo"
                             style="border-radius: 30px;">
                         </amp-img>
                     </div>
@@ -1101,7 +1144,7 @@
 
                                 Provides an extensive treatment plan to help control your diabetes.
                             </h4>
-                            <br/>
+                            <br />
                             <h4 class="f-w-500 f-s-12 f-s-r">
 
                                 As our detox plan lowers your blood sugar, you will notice your dependence on medication
@@ -1174,7 +1217,7 @@
                                 The final phase is meant to help you adjust to your new normal and help you in
                                 sustaining it.
                             </h4>
-                            <br/>
+                            <br />
                             <h4 class="f-w-500 f-s-12 f-s-r">
 
 
@@ -1217,7 +1260,7 @@
 
                         <div>
                             <div class="over-say-review-img-wrapper">
-                                <amp-img src="./assest/google.webp" width="1" height="1" layout="responsive" alt="">
+                                <amp-img src="./assest/google.svg " width="1" height="1" layout="responsive" alt="">
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
@@ -1235,7 +1278,7 @@
 
                         <div>
                             <div class="over-say-review-img-wrapper">
-                                <amp-img src="./assest/google.webp" width="1" height="1" layout="responsive" alt="">
+                                <amp-img src="./assest/google.svg" width="1" height="1" layout="responsive" alt="">
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
@@ -1256,7 +1299,7 @@
 
                         <div>
                             <div class="over-say-review-img-wrapper">
-                                <amp-img src="./assest/google.webp" width="1" height="1" layout="responsive" alt="">
+                                <amp-img src="./assest/google.svg" width="1" height="1" layout="responsive" alt="">
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
@@ -1276,7 +1319,7 @@
                         </div>
                         <div>
                             <div class="over-say-review-img-wrapper">
-                                <amp-img src="./assest/p-Vector.webp" width="1" height="1" layout="responsive" alt="">
+                                <amp-img src="./assest/p.svg" width="1" height="1" layout="responsive" alt="">
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
@@ -1297,7 +1340,7 @@
                             <div class="over-say-review-img-wrapper">
 
 
-                                <amp-img src="./assest/p-Vector.webp" width="1" height="1" layout="responsive" alt="">
+                                <amp-img src="./assest/p.svg" width="1" height="1" layout="responsive" alt="">
 
 
 
@@ -1323,7 +1366,7 @@
                         </div>
                         <div>
                             <div class="over-say-review-img-wrapper">
-                                <amp-img src="./assest/p-Vector.webp" width="1" height="1" layout="responsive" alt="">
+                                <amp-img src="./assest/p.svg" width="1" height="1" layout="responsive" alt="">
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
@@ -1343,7 +1386,7 @@
                         </div>
                         <div>
                             <div class="over-say-review-img-wrapper">
-                                <amp-img src="./assest/p-Vector.webp" width="1" height="1" layout="responsive" alt="">
+                                <amp-img src="./assest/p.svg" width="1" height="1" layout="responsive" alt="">
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
@@ -1407,11 +1450,11 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <h3 class="f-s-18 f-w-400">080 4680 8989</h3>
+                                <h3 class="f-s-16 f-w-400">080 4680 8989</h3>
                             </div>
-                            <div class="flex">
-                                <h3 style="margin: 5px;">4.9</h3>
-                                <div style="width: 40%;">
+                            <div class="flex m-t-10">
+                                <h3 style="margin: 0px 5px;" class="f-s-12">4.9</h3>
+                                <div style="width: 25%;">
                                     <amp-img src="./assest/stars.webp" width="5" height="1" layout="responsive" alt="">
                                     </amp-img>
                                 </div>
@@ -1461,11 +1504,11 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <h3 class="f-s-18 f-w-400">080 4680 8989</h3>
+                                <h3 class="f-s-16 f-w-400">080 4680 8989</h3>
                             </div>
-                            <div class="flex">
-                                <h3 style="margin: 5px;">4.9</h3>
-                                <div style="width: 40%;">
+                            <div class="flex  m-t-10">
+                                <h3 style="margin:0px 5px;" class="f-s-12">4.9</h3>
+                                <div style="width: 25%;">
                                     <amp-img src="./assest/stars.webp" width="5" height="1" layout="responsive" alt="">
                                     </amp-img>
                                 </div>
@@ -1514,11 +1557,11 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <h3 class="f-s-18 f-w-400">080 4680 8989</h3>
+                                <h3 class="f-s-16 f-w-400">080 4680 8989</h3>
                             </div>
-                            <div class="flex">
-                                <h3 style="margin: 5px;">4.9</h3>
-                                <div style="width: 40%;">
+                            <div class="flex  m-t-10">
+                                <h3 style="margin:0px  5px; " class="f-s-12">4.9</h3>
+                                <div style="width: 25%;">
                                     <amp-img src="./assest/stars.webp" width="5" height="1" layout="responsive" alt="">
                                     </amp-img>
                                 </div>
@@ -1555,9 +1598,8 @@
                         <h2 class="drk-blu-txt f-s-18 f-w-700">Skip the travel!</h2>
                         <p class="f-w-400 f-s-14">Take Online Doctor Consultation <br />Private video consultation</p>
                     </div>
-                    <div style="margin: 20px; flex:1;">
-                        <amp-img src="./assest/istockphoto-1294132648-612x612 1.webp" width="1.3" height="1"
-                            layout="responsive" alt="logo">
+                    <div style="margin:0px 10px; flex:1;">
+                        <amp-img src="./assest/d2.svg" width="1.3" height="1" layout="responsive" alt="logo">
                         </amp-img>
                     </div>
 
@@ -1731,28 +1773,53 @@
 
                 <div class="flex">
                     <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
                 </div>
 
                 <div class="flex">
-                    <h4 class="  f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
                 </div>
-
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
                 </div>
-
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
                 </div>
-
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
                 </div>
-
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
                 </div>
-
 
 
 
@@ -1797,12 +1864,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
