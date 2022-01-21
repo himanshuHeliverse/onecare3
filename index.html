@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>OneCare - A Chain of Smart Diabetes Clinics</title>
+    <link rel="canonical" href="./index.html"/>
     <meta name="amp-script-src" content="sha384-AGfIK3xyyrcRWR-yI0HPk91gLZag7-SfA97XEQPAr6URvgIR5UqO5YALuid0V-7t">
-    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <link rel="preconnect" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +21,7 @@
         src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
 
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
-    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+ 
     <style amp-boilerplate>
         body {
             -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -467,7 +468,7 @@
         }
 
         #FAQ div>div {
-            padding: 10px 40px;
+            padding: 10px 20px;
             background-color: white;
             margin: 20px 0px;
             justify-content: space-between;
@@ -619,7 +620,7 @@
         }
 
         #sticky-btn>div>a {
-            padding: 15px;
+            
             border-radius: 5px;
             margin-left: 10px;
 
@@ -654,7 +655,7 @@
         <header>
             <nav>
                 <div class="logo-wrapper">
-                    <a href="/" class="logo">
+                    <a href="index.html" class="logo">
                         <amp-img src="./assest/logo.svg" width="3.2" height="1" layout="responsive" alt="logo">
                         </amp-img>
                     </a>
@@ -671,9 +672,9 @@
         <section id="top">
 
             <div>
-                <amp-base-carousel auto-advance="true" auto-advance-interval="3000000000" id="carouselID" height="550"
+                <amp-base-carousel auto-advance="true" auto-advance-interval="3000" id="carouselID" height="550"
                     layout="fixed-height" visible-count="1" advance-count="1" controls="never"
-                    on="slideChange: SelectorID.toggle(index=event.index, value=true)">
+                    on="slideChange: SelectorID.toggle(index=event.index,value=true)">
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
@@ -815,7 +816,7 @@
 
 
 
-                <amp-script width="300" height="50" script="hello-world">
+        
                     <div style="display: flex; justify-content: space-between;">
                         <div style="    display: flex;
                         align-items: center;">
@@ -830,16 +831,10 @@
                         </div>
 
                     </div>
-                </amp-script>
+                
 
                 <!-- Add [target="amp-script"] to the <script> element. -->
-                <script id="hello-world" type="text/plain" target="amp-script">
-                  var checkboxes = document.querySelectorAll('input[type=checkbox][name=Consultation]');
-                  checkboxes.addEventListener('change', () => {
-                    console.log("ok")
-                    });
-                 
-                  </script>
+             
                 <input class="blue-bg button" type="submit" value="SUBMIT">
                 <div submitting style="position: absolute; background-color: gray;">
                     <template type="amp-mustache">
@@ -1752,7 +1747,7 @@
             <div>
 
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What is Type 2 diabetes? </h4>
                     <span>
                         <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
                             alt="logo">
@@ -1761,7 +1756,8 @@
                 </div>
 
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What are the complications of type 2 diabetes?
+                    </h4>
                     <span>
                         <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
                             alt="logo">
@@ -1769,7 +1765,7 @@
                     </span>
                 </div>
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">How is diabetes diagnosed?</h4>
                     <span>
                         <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
                             alt="logo">
@@ -1777,7 +1773,7 @@
                     </span>
                 </div>
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Can diabetes be cured? </h4>
                     <span>
                         <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
                             alt="logo">
@@ -1785,7 +1781,7 @@
                     </span>
                 </div>
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Can diabetes be managed with medicines alone? </h4>
                     <span>
                         <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
                             alt="logo">
@@ -1793,7 +1789,7 @@
                     </span>
                 </div>
                 <div class="flex">
-                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What is OneCare?</h4>
                     <span>
                         <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
                             alt="logo">
@@ -1802,7 +1798,67 @@
                 </div>
 
 
-
+                <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What is the OneCare IMPACT program?
+                    </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div>       <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Is this program sufficient to manage my diabetes?
+                    </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div>       <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Will the program be customized to my needs?</h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div>       <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What are the benefits of the program?</h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div>       <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Are doctors consultations part of the program?</h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div>       <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Who is a health coach?
+                    </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div>       <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Will the health coach offer me personal counselling?
+                    </h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div>       <div class="flex">
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">How do I work with my coach?</h4>
+                    <span>
+                        <amp-img style="width: 15px;" src="./assest/Arrow.svg" width="1" height="1" layout="responsive"
+                            alt="logo">
+                        </amp-img>
+                    </span>
+                </div> 
 
             </div>
 
