@@ -411,6 +411,7 @@
             color: white;
             margin: 2px;
             padding: 10px;
+            text-align: center;
             background: linear-gradient(90.13deg, #F8A622 -6.56%, #F16679 177.9%);
             border-radius: 5px;
         }
@@ -561,11 +562,20 @@
             border-top: 1px solid #F1647B;
             position: absolute;
             width: 10px;
-            height: 175px;
+            height: 160px;
             top: -8px;
             border-bottom: 1px solid #F1647B;
             right: -6px;
         }
+        .timeline ul li:nth-child(odd):after {
+            content: '';
+    position: absolute;
+    width: 290px;
+    height: 1px;
+    top: 80px;
+    border-bottom: 1px solid #FFE1E6;
+    right: -175px;
+}
 
 
 
@@ -932,8 +942,9 @@
                     </div>
 
                     <div class="doc-det">
-                        <h4 class="f-s-14 f-w-400 f-s-r"> Dr. Basavaraj GS<br />
-                            MBBS, MD, DM<br /> (Endocrinology) </h4>
+                        <h4 class="f-s-14 f-w-700 f-s-r"> Dr. Basavaraj GS<br />
+                            <span class=" f-w-400">    MBBS, MD, DM<br /> (Endocrinology)</span>
+                         </h4>
                         <h4 class="  m-t-10 f-s-12 f-w-400 f-s-r orange-txt">13+ years of experience<br />
                             Associated with Narayana Hrudayalaya</h4>
                         <div class="flex">
@@ -961,7 +972,7 @@
                     </div>
 
                     <div class="doc-det">
-                        <h4 class="f-s-14 f-w-400 f-s-r"> Dr. C Siva Rama Krishna<br /> MD, M.H. Sc.<br /> (Diabetology)
+                        <h4 class="f-s-14 f-w-700 f-s-r"> Dr. C Siva Rama Krishna<br /> <span class="f-s-400">MD, M.H. Sc.<br /> (Diabetology)</span>
                         </h4>
                         <h4 class=" f-s-12 f-w-400 f-s-r orange-txt m-t-10"> 10+ years of experience</h4>
                         <div class="flex">
@@ -986,9 +997,10 @@
                     </div>
 
                     <div class="doc-det">
-                        <h4 class=" f-s-14 f-w-400 f-s-r"> Dr. Lavanya<br />
-                            MBBS<br />
-                            (Diabetology)
+                        <h4 class=" f-s-14 f-w-700 f-s-r"> Dr. Lavanya<br />
+                            <span class="f-s-400">   MBBS<br />
+                                (Diabetology)</span>
+                         
 
                         </h4>
 
@@ -1032,7 +1044,7 @@
                         <div class="content">
                             <div class="flex">
                                 <div style="width: 60px; margin: 10px;">
-                                    <amp-img src="./assest/pink1.webp" width="1" height="1.7" layout="responsive"
+                                    <amp-img src="./assest/pink1.webp" width="1" height="1.78" layout="responsive"
                                         alt="logo">
                                     </amp-img>
                                 </div>
@@ -1082,7 +1094,7 @@
 
 
 
-                                We will help you replace your harmful lifestyle habits with healthy ones.</h4>
+                                We will help you replace your harmful lifestyle habits with  healthy ones.</h4>
                             <br>
                             <h4 class="f-w-500 f-s-12 f-s-r">
 
@@ -1118,7 +1130,7 @@
 
 
 
-                                Provides an extensive treatment plan to help control your diabetes.
+                                Provides an extensive treatment plan to help control your <br/> diabetes.
                             </h4>
                             <br />
                             <h4 class="f-w-500 f-s-12 f-s-r">
@@ -1156,7 +1168,7 @@
 
 
 
-                                Here, you will focus on muscle building and strengthening.</h4>
+                                Here, you will focus on muscle building and <br/> strengthening.</h4>
                             <br>
                             <h4 class="f-w-500 f-s-12 f-s-r">
 
