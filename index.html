@@ -446,16 +446,21 @@
         }
 
         .slide-wrapper:nth-child(even) {
-
-
+          
             background: linear-gradient(177.97deg, #C6EFFF 1.72%, #F2E8FF 98.52%),
-                linear-gradient(0deg, #C4C4C4, #C4C4C4);
+linear-gradient(0deg, #C4C4C4, #C4C4C4);
 
+
+            
         }
 
         .slide-wrapper:nth-child(odd) {
-            background: linear-gradient(180deg, #FFD7E2 -4.33%, #FFEFD4 109.25%),
-                linear-gradient(0deg, #FFF5E7, #FFF5E7);
+            background: linear-gradient(180deg, #FFCFDD -4.68%, #FFEFD4 118.2%),
+linear-gradient(0deg, #C4C4C4, #C4C4C4);
+background-repeat: no-repeat;
+    background-position: 95% 105%;
+    background-size: 100%;
+                
 
         }
 
@@ -726,12 +731,12 @@
         <section id="top">
 
             <div>
-                <amp-base-carousel auto-advance="true" auto-advance-interval="30000000000" id="carouselID" height="650"
+                <amp-base-carousel auto-advance="true" auto-advance-interval="3000" id="carouselID" height="650"
                     layout="fixed-height" visible-count="1" advance-count="1" controls="never"
                     on="slideChange: SelectorID.toggle(index=event.index,value=true)">
                     <div class="slide-wrapper">
                         <div class="slide"style="  background-image: url('./assest/circle.svg');" >
-                            <div>
+                            <div style=" z-index:2;" >
                                 <h1 class="f-w-700 f-s-30">Anup Khees<br /> <span class="f-w-500">Age-35 yrs</span>
                                 </h1>
                                 <div class=" m-t-10 flex">
