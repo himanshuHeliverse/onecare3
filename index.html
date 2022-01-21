@@ -1,5 +1,5 @@
 <!doctype html>
-<html amp lang="en" data-ampdevmode>
+<html amp lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,7 +8,9 @@
     <link rel="canonical" href="./index.html" />
     <meta name="amp-script-src" content="sha384-AGfIK3xyyrcRWR-yI0HPk91gLZag7-SfA97XEQPAr6URvgIR5UqO5YALuid0V-7t">
     <link rel="preconnect" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&family=Libre+Caslon+Text&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&family=Libre+Caslon+Text&family=Roboto&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
@@ -103,20 +105,30 @@
         }
 
         h1 {
+            color: #4E4E4E;
             letter-spacing: 0em;
             margin: 10px 0px;
         }
 
         h2 {
+            color: #4E4E4E;
             margin: 10px 0px;
             letter-spacing: 0em;
         }
 
-        h3 {
+        h3 {color: #4E4E4E;
             margin: 10px 0px;
         }
+h4{
+    color: #4E4E4E;
+}
+p{
+    color: #4E4E4E;
+}
+.pink-shd{
+    background: linear-gradient(180deg, #FFD7E2 -4.33%, #FFEFD4 109.25%)
 
-
+}
         .blu-txt {
             color: #28B1DA;
         }
@@ -146,7 +158,14 @@
             color: #F1647B;
 
         }
+.black{
+ color: #4E4E4E;
 
+
+}
+.white{
+    color: white;
+}
         .flex {
             display: flex;
             justify-content: flex-start;
@@ -285,7 +304,7 @@
             padding: 15px;
             font-size: 14px;
             border-radius: 6px;
-            border: 1px solid gray;
+            border: 1px solid #C2C2C2;
         }
 
         #form input[type="radio"] {
@@ -367,10 +386,6 @@
             width: 60%;
         }
 
-        #user-say {
-            background: #FFF5E7;
-        }
-
         #user-say-wrapper {
             display: flex;
             justify-content: space-between;
@@ -429,8 +444,9 @@
         }
 
         .slide-wrapper:nth-child(odd) {
-            background: linear-gradient(180deg, #FFCFDD -4.68%, #FFEFD4 118.2%),
-                linear-gradient(0deg, #C4C4C4, #C4C4C4);
+            background: linear-gradient(180deg, #FFD7E2 -4.33%, #FFEFD4 109.25%),
+linear-gradient(0deg, #FFF5E7, #FFF5E7);
+
         }
 
         .slide {
@@ -450,7 +466,7 @@
 
         .slide>div:first-child {
             display: flex;
-            padding: 0px 20px;
+            padding: 20px;
             /* width: 85%; */
             height: 200px;
             justify-content: space-between;
@@ -649,9 +665,10 @@
         }
 
         a {
+            color: #4E4E4E;
             text-decoration: none;
             cursor: pointer;
-            
+
         }
     </style>
 
@@ -693,14 +710,14 @@
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
-                                <h1 class="f-w-700 f-s-30">Anup Khees<br /> <span>Age-35 yrs</span> </h1>
+                                <h1 class="f-w-700 f-s-30">Anup Khees<br /> <span class="f-w-500">Age-35 yrs</span>
+                                </h1>
                                 <div class=" m-t-10 flex">
-                                    <div class="flex" style="margin-right: 15px;
-                                ">
+                                    <div class="flex" style="margin-right: 15px;">
                                         <amp-img style="width: 20px;" src="./assest/Rh+.svg" width="1" height="1"
                                             layout="responsive" alt="logo">
                                         </amp-img>
-                                        <h4>92/115</h4>
+                                        <h4 class="f-w-500">92/115</h4>
                                     </div>
 
 
@@ -708,7 +725,7 @@
                                         <amp-img style="width: 20px;" src="./assest/oill.svg" width="1" height="1"
                                             layout="responsive" alt="logo">
                                         </amp-img>
-                                        <h4>50% Reduction</h4>
+                                        <h4 class="f-w-500">50% Reduction</h4>
                                     </div>
                                 </div>
 
@@ -716,10 +733,9 @@
                                     dosage also got reduced to
                                     half
                                     and<br /> I'm very sure that it will stop completely in some time. </p>
-                                <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
-                                    <a href="#form-section" class="f-s-i f-w-700 blue-bg center-txt">Book a Doctor
-                                        Consultation</a>
-                                </div>
+                                    <div class="m-t-10" >
+                                        <a href="#form-section"style="padding: 10px 20px; border-radius: 6px;" class="  f-w-700 blue-bg f-s-i center-txt">GET STARTED </a>
+                                    </div>
                             </div>
                             <div style="width: 500px; position: relative; top: 180px; ">
                                 <amp-img src="./assest/1_HEoLBLidT2u4mhJ0oiDgig 2.svg" width="3" height="2.7"
@@ -733,7 +749,7 @@
                         <div class="slide">
                             <div>
 
-                                <h1 class="f-s-30 f-w-700 orange-txt">Live a life beyond diabetes,<br /> starting today.
+                                <h1 class="f-s-30 f-w-700 pink-txt">Live A Life Beyond Diabetes,<br /> Starting Today.
                                 </h1>
 
                                 <p class="f-s-14 f-w-400">Our team includes leading diabetologists,<br />
@@ -741,9 +757,8 @@
                                     dieticians, <br />health coaches all working with you to build a<br /> personalised
                                     care plan
                                     specific to your need. </p>
-                                <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
-                                    <a href="#form-section" class=" blue-bg  f-w-700 f-s-i center-txt">Book a Doctor
-                                        Consultation</a>
+                                <div class="m-t-10">
+                                    <a href="#form-section"  style="padding: 10px 20px; border-radius: 6px;" class=" blue-bg  f-w-700 f-s-i center-txt">GET STARTED</a>
                                 </div>
                             </div>
                             <div style="    width: 600px;
@@ -760,16 +775,15 @@
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
-                                <h1 class='f-s-30 f-w-700;'>Don't just fight diabetes,<br /> understand & manage it.
+                                <h1 class='f-s-30 f-w-700;'>Don't Just Fight Diabetes,<br /> Understand & Manage It.
                                 </h1>
 
                                 <p class="f-s-14 f-w-400">Diabetes care is unique to everyone. Beat it with the <br />
                                     Right Approach that works for
                                     you.
                                 </p>
-                                <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
-                                    <a href="#form-section" class="  f-w-700 blue-bg f-s-i center-txt">Book a Doctor
-                                        Consultation</a>
+                                <div class="m-t-10" >
+                                    <a href="#form-section"  style="padding: 10px 20px; border-radius: 6px;" class="  f-w-700 blue-bg f-s-i center-txt">GET STARTED</a>
                                 </div>
                             </div>
                             <div style="  position: relative;  width: 475px;;
@@ -784,19 +798,20 @@
                     <div class="slide-wrapper">
                         <div class="slide">
                             <div>
-                                <h1 class='f-s-30 f-w-700 orange-txt'>Skip the travel
+                                <h1 class='f-s-30 f-w-700 pink-txt'>Skip The Travel
                                 </h1>
 
                                 <p class="f-s-14 f-w-400">Take Online Doctor Consultation <br />
                                     Private video consultation
                                 </p>
-                                <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
-                                    <a href="#form-section" class="  f-w-700 blue-bg f-s-i center-txt">Book a Doctor
-                                        Consultation</a>
+                                <div class="m-t-10" >
+                                    <a href="#form-section"style="padding: 10px 20px; border-radius: 6px;" class="  f-w-700 blue-bg f-s-i center-txt">GET STARTED</a>
                                 </div>
                             </div>
-                            <div style="   position: relative; width: 315px;;
-                            left: 27%; top: 256px;">
+                            <div style="       position: relative;
+                            width: 415px;
+                            left: 3%;
+                            top: 272px;">
                                 <amp-img src="./assest/d.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
                                 </amp-img>
                             </div>
@@ -816,8 +831,6 @@
                 </amp-selector>
             </div>
         </section>
-
-
         <section id="form-section">
 
 
@@ -872,9 +885,8 @@
                 </div>
             </form>
         </section>
-
         <section id="manage">
-            <h2 class=" f-s-24 f-w-700 center-txt orange-txt">Manage your diabetes <br /> in 3 easy steps</h2>
+            <h2 class=" f-s-24 f-w-700 center-txt orange-txt">Manage Your Diabetes <br /> In 3 Easy Steps</h2>
             <div id="manage-wrapper">
                 <div>
                     <div class="manage-img-wrapper">
@@ -932,7 +944,6 @@
 
             </div>
         </section>
-
         <section id="Diabetologists">
             <h2 class=" f-s-24 f-w-700 center-txt ">Best Endocrinologists & Diabetologists<span class="orange-txt">in
                     Bangalore</span>
@@ -1032,7 +1043,6 @@
 
             </div>
         </section>
-
         <section id="impact-program">
 
             <h2 class=" f-w-700 f-s-30 center-txt">OneCare <span class="orange-txt">
@@ -1244,8 +1254,7 @@
 
 
         </section>
-
-        <section id="user-say"  style="background-color: white;">
+        <section id="user-say" class="pink-shd">
             <div id="user-say-wrapper">
                 <div id="over-say-review">
 
@@ -1411,7 +1420,6 @@
 
             </div>
         </section>
-
         <section id="location" style="background-color: white;">
             <h2 class=" f-s-24 f-w-700 center-txt" style="color:  #F26975">Our Locations</h2>
             <h3 class=" f-s-14 f-w-500 center-txt">We are at 3 locations in Bengaluru</h3>
@@ -1447,7 +1455,7 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <a style="color: black;" href="#080 4680 8989" class="f-s-16 f-w-400">080 4680 8989</a>
+                                <a  href="#080 4680 8989" class=" f-s-16 f-w-600">080 4680 8989</a>
                             </div>
                             <div class="flex m-t-10">
                                 <h3 style="margin: 0px 5px;" class="f-s-12">4.9</h3>
@@ -1471,7 +1479,7 @@
                             <p class="center-txt f-s-12 f-s-i f-w-700">GET DIRECTIONS</p>
                         </div>
                         <div>
-                            <a href="#form-section" style="color: white;" class="center-txt f-s-12 f-s-i f-w-700">Book a Consultation</a>
+                            <a href="#form-section"  class="center-txt white f-s-12 f-s-i f-w-700">BOOK A CONSULTATION</a>
                         </div>
                     </div>
                 </div>
@@ -1483,7 +1491,7 @@
                             <div class="flex1">
                                 <div class="location-img-wrapper">
                                     <amp-img src="./assest/Location.webp" width="1" height="1" layout="responsive"
-                                        alt="">
+                                        alt="LOGO">
                                     </amp-img>
                                 </div>
                                 <div>
@@ -1501,7 +1509,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <a style="color: black;" href="tel:080 4680 8989" class="f-s-16 f-w-400">080 4680 8989</a>
+                                <a  href="tel:080 4680 8989" class="f-s-16 f-w-600">080 4680
+                                    8989</a>
                             </div>
                             <div class="flex  m-t-10">
                                 <h3 style="margin:0px 5px;" class="f-s-12">4.9</h3>
@@ -1522,10 +1531,10 @@
                     </div>
                     <div class="flex map-btn-wrapper">
                         <div>
-                            <p class=" f-s-12 f-s-i f-w-700 center-txt">GET DIRECTIONS</p>
+                            <p class=" white f-s-12 f-s-i f-w-700 center-txt">GET DIRECTIONS</p>
                         </div>
                         <div>
-                            <a href="#form-section"  style="color: white;"  class=" f-s-12 f-s-i f-w-700 center-txt">Book a Consultation</a>
+                            <a href="#form-section"  class=" f-s-12 f-s-i f-w-700 white center-txt">BOOK A CONSULTATION</a>
                         </div>
                     </div>
                 </div>
@@ -1554,7 +1563,8 @@
                                         alt="logo">
                                     </amp-img>
                                 </div>
-                                <a style="color: black;" href="tel:080 4680 8989" class="f-s-16 f-w-400">080 4680 8989</a>
+                                <a href="tel:080 4680 8989" class="f-s-16 f-w-600 ">080 4680
+                                    8989</a>
                             </div>
                             <div class="flex  m-t-10">
                                 <h3 style="margin:0px  5px; " class="f-s-12">4.9</h3>
@@ -1575,10 +1585,10 @@
                     </div>
                     <div class="flex map-btn-wrapper">
                         <div>
-                            <p class=" f-s-12 f-s-i f-w-700 center-txt">GET DIRECTIONS</p>
+                            <p class=" white f-s-12 f-s-i f-w-700 center-txt">GET DIRECTIONS</p>
                         </div>
                         <div>
-                            <a  style="color: white;"  href="#form-section" class=" f-s-12 f-s-i f-w-700 center-txt">Book a Consultation</a>
+                            <a href="#form-section" class=" white f-s-12 f-s-i f-w-700 center-txt">BOOK A CONSULTATION</a>
                         </div>
                     </div>
                 </div>
@@ -1602,7 +1612,7 @@
 
                 </div>
 
-                <div class="blue-bg center-txt" style="padding: 1px; border-radius: 5px; width: 90%; margin: auto;">
+                <div class="blue-bg center-txt white" style="padding: 1px; border-radius: 5px; width: 90%; margin: auto;">
                     <h2 class="f-s-18 f-w-700">Book Free Appointment </h2>
                 </div>
 
@@ -1760,7 +1770,7 @@
 
 
         </section>
-        <section style="background-color: white;">
+        <section class="white">
             <h3 class="f-s-18 f-w-700 ">In the news</h3>
             <div class="flex">
 
@@ -1987,7 +1997,8 @@ align-items: flex-end;">
 
             <div class="flex">
 
-                <a href='' style="padding:15px" class=" blue-bg f-s-16 f-s-i f-w-500 button">Get Your 1st Consultation
+                <a href='#form-section' style="padding:15px" class=" blue-bg f-s-16 f-s-i f-w-500 button">Get Your 1st
+                    Consultation
                     Free
                 </a>
             </div>
