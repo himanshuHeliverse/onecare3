@@ -176,10 +176,14 @@
             font-size: 18px;
             line-height: 23px;
         }
+        .f-s-16 {
+            font-size: 16px;
+            line-height: 21px;
+        }
 
         .f-s-14 {
             font-size: 14px;
-            line-height: 17px;
+            line-height: 20px;
         }
 
         .f-s-12 {
@@ -214,6 +218,9 @@
             font-family: 'Roboto'
         }
 
+        .m-t-10{
+            margin: 10px 0px;
+        }
         header {
             width: 100%;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -344,7 +351,7 @@
         }
 
         .doc-det {
-            margin: 15px;
+            margin: 10px;
             width: 60%;
         }
 
@@ -489,35 +496,29 @@
         .dots li[option][selected] {
             outline: 0px solid rgba(0, 0, 0, 0.7);
             border: 1px solid #28B1DA;
-            background: #28B1DA;
+            background: #bcced3;
         }
 
         .tick-wrapper {
             display: flex;
-            justify-content: space-evenly;
+            margin: 10px 0px;
+            justify-content: space-around;
         }
 
         .tick-wrapper>p {
-            width: 40%;
+            width: 50%;
         }
 
         .tick-wrapper>div {
-            width: 30px;
+            width: 20px;
             margin: 10px 0px;
         }
-
         #tick-head {
             display: flex;
             justify-content: end;
             align-items: center;
             margin-right: 20px;
         }
-
-        #tick-head>p {
-            font-weight: 700;
-            margin-right: 10px;
-        }
-
         .timeline {
             position: relative;
             margin: 30px auto;
@@ -613,10 +614,11 @@
             align-items: flex-end;
         }
 
-        #sticky-btn>div>div {
+        #sticky-btn>div>a {
             padding: 15px;
             border-radius: 10px;
             margin-left: 10px;
+            
         }
 
         #sticky-btn>div {
@@ -629,6 +631,10 @@
             align-items: center;
             padding: 18px;
 
+        }
+        a{
+        text-decoration: none;
+        cursor: pointer;
         }
     </style>
 
@@ -643,16 +649,16 @@
 
         <div id="sticky-btn">
             <a href=" https://wa.me/918951893293">
-                <amp-img style="width: 30px;" src="./assest/WhatsApp.svg" width="1" height="1" layout="responsive"
+                <amp-img style="width: 50px;" src="./assest/WhatsApp.svg" width="1" height="1" layout="responsive"
                     alt="logo">
                 </amp-img>
             </a>
 
 
             <div>
-                <p class="f-s-14 f-s-i f-w-500">Get Your 1st Private <br /> Consultation + Call Free</p>
-                <div style="padding:15px" class=" blue-bg f-s-12 f-s-i f-w-500 button">Get Your 1st Consultation Free
-                </div>
+                <p class="f-s-14 f-s-i f-w-500">Get Your 1st Private <br /> Consultation + Free Call </p>
+                <a  href=''style="padding:15px" class=" blue-bg f-s-12 f-s-i f-w-500 button">Get Your 1st Consultation Free
+                </a>
             </div>
 
         </div>
@@ -666,7 +672,7 @@
 
                 </div>
                 <div>
-                    <h3 class="gray-txt web"> A Chain<BR /> of Smart Diabetes Clinics</h3>
+                    <h3 class="f-s-16 f-w-500 gray-txt web"> A Chain<BR /> of Smart Diabetes Clinics</h3>
 
                 </div>
             </nav>
@@ -688,7 +694,7 @@
                                     half
                                     and<br /> I'm very sure that it will stop completely in some time. </p>
                                 <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
-                                    <h4 class="f-s-i f-w-700 center-txt">Book a Doctor Consultation</h4>
+                                    <a href="" class="f-s-i f-w-700 blue-bg center-txt">Book a Doctor Consultation</a>
                                 </div>
                             </div>
                             <div style="width: 320px; left:25%">
@@ -712,7 +718,7 @@
                                     care plan
                                     specific to your need. </p>
                                 <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
-                                    <h4 class=" f-s-i center-txt">Book a Doctor Consultation</h4>
+                                    <a href="" class=" blue-bg  f-w-700 f-s-i center-txt">Book a Doctor Consultation</a>
                                 </div>
                             </div>
                             <div style="width: 437px;">
@@ -734,7 +740,7 @@
                                     you.
                                 </p>
                                 <div class="blue-bg" style="padding: 10px 20px; border-radius: 6px;">
-                                    <h4 class=" f-s-i center-txt">Book a Doctor Consultation</h4>
+                                    <a href="" class="  f-w-700 blue-bg f-s-i center-txt">Book a Doctor Consultation</a>
                                 </div>
                             </div>
                             <div style="    width: 315px;;
@@ -909,9 +915,9 @@
                     <div class="doc-det">
                         <h4 class="f-s-14 f-w-400 f-s-r"> Dr. Basavaraj GS<br />
                             MBBS, MD, DM<br /> (Endocrinology) </h4>
-                        <h4 class=" f-s-12 f-w-400 f-s-r orange-txt">13+ years of experience<br />
+                        <h4 class="  m-t-10 f-s-12 f-w-400 f-s-r orange-txt">13+ years of experience<br />
                             Associated with Narayana Hrudayalaya</h4>
-                        <div style="display: flex;">
+                        <div class="flex">
                             <div style="width: 6%;margin-right: 5px;">
                                 <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive"
                                     alt="logo">
@@ -938,8 +944,8 @@
                     <div class="doc-det">
                         <h4 class="f-s-14 f-w-400 f-s-r"> Dr. C Siva Rama Krishna<br /> MD, M.H. Sc.<br /> (Diabetology)
                         </h4>
-                        <h4 class=" f-s-12 f-w-400 f-s-r orange-txt"> 10+ years of experience</h4>
-                        <div style="display: flex;">
+                        <h4 class=" f-s-12 f-w-400 f-s-r orange-txt m-t-10" > 10+ years of experience</h4>
+                        <div class="flex">
                             <div style="width: 6%;margin-right: 5px;">
                                 <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive"
                                     alt="logo">
@@ -961,21 +967,21 @@
                     </div>
 
                     <div class="doc-det">
-                        <h4 class="f-s-14 f-w-400 f-s-r"> Dr. Lavanya<br />
+                        <h4 class=" f-s-14 f-w-400 f-s-r"> Dr. Lavanya<br />
                             MBBS<br />
                             (Diabetology)
 
                         </h4>
 
-                        <h4 class="  f-s-12 f-w-400 f-s-r orange-txt"> 17+ years of experience<br />
+                        <h4 class="  m-t-10 f-s-12 f-w-400 f-s-r orange-txt"> 17+ years of experience<br />
 
                             Associated with Apollo Hospitals</h4>
-                        <div style="display: flex;">
+                        <div class="flex">
                             <div style="width: 6%;margin-right: 5px;">
                                 <amp-img src="./assest/Thumbs Up.webp" width="1" height="1" layout="responsive" alt="">
                                 </amp-img>
                             </div>
-                            <h4 class="f-s-12 f-w-500 ">98% Approval on Practo</h4>
+                            <h4 class=" m-t-10 f-s-12 f-w-500 ">98% Approval on Practo</h4>
                         </div>
 
                     </div>
@@ -1021,14 +1027,13 @@
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 0 : 1 week</h3>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-16 f-s-r">Duration 0 : 1 week</h3>
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
                                 We will begin the programme by getting to know you, your lifestyle, and your eating
                                 habits.</h4>
                             <br>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
-
+                            <h4 class="f-w-500 f-s-14 f-s-r">2
                                 You acquire practical knowledge about how we are going to fight your diabetes</h4>
                         </div>
 
@@ -1053,14 +1058,14 @@
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 3 : 6 weeks</h3>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-16 f-s-r">Duration 3 : 6 weeks</h3>
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
 
 
                                 We will help you replace your harmful lifestyle habits with healthy ones.</h4>
                             <br>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
 
                                 From weight reduction to energized physique, your body starts to enjoy a positive
@@ -1089,15 +1094,15 @@
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 8 : 12 weeks</h3>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-16 f-s-r">Duration 8 : 12 weeks</h3>
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
 
 
                                 Provides an extensive treatment plan to help control your diabetes.
                             </h4>
-                            <br>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <br/>
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
                                 As our detox plan lowers your blood sugar, you will notice your dependence on medication
                                 starting to wane.</h4>
@@ -1127,14 +1132,14 @@
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 3 : 8 weeks</h3>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-16 f-s-r">Duration 3 : 8 weeks</h3>
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
 
 
                                 Here, you will focus on muscle building and strengthening.</h4>
                             <br>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
                                 Building body muscles, and a sustained feeling of absolute wellness. </h4>
                         </div>
@@ -1161,16 +1166,16 @@
 
                         </div>
                         <div class="time">
-                            <h3 class="f-w-700 f-s-14 f-s-r">Duration 6 : 8 weeks</h3>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <h3 class="f-w-700 f-s-16 f-s-r">Duration 6 : 8 weeks</h3>
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
 
 
                                 The final phase is meant to help you adjust to your new normal and help you in
                                 sustaining it.
                             </h4>
-                            <br>
-                            <h4 class="f-w-500 f-s-14 f-s-r">
+                            <br/>
+                            <h4 class="f-w-500 f-s-12 f-s-r">
 
 
                                 With healthy habits already ingrained, you can keep diabetes under control forever.
@@ -1216,7 +1221,7 @@
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
-                                <h4 class=" f-s-14 f-s-700 orange-txt">Laxminarasimha Reddy</h4>
+                                <h4 class=" f-s-16 f-s-700 orange-txt">Laxminarasimha Reddy</h4>
                                 <div style="width:60px; margin: 5px  0px;">
                                     <amp-img src="./assest/stars.webp" width="4" height="1" layout="responsive"
                                         alt="logo">
@@ -1234,7 +1239,7 @@
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
-                                <h4 class=" f-s-14 f-w-700 orange-txt">Deepa Kamath</h4>
+                                <h4 class=" f-s-16 f-w-700 orange-txt">Deepa Kamath</h4>
                                 <div style="width:60px; margin: 5px  0px;">
                                     <amp-img src="./assest/stars.webp" width="4" height="1" layout="responsive"
                                         alt="logo">
@@ -1255,7 +1260,7 @@
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
-                                <h4 class=" f-s-14 f-w-700 orange-txt">Sakshi Agarwal</h4>
+                                <h4 class=" f-s-16 f-w-700 orange-txt">Sakshi Agarwal</h4>
                                 <div style="width:60px; margin: 5px  0px;">
                                     <amp-img src="./assest/stars.webp" width="4" height="1" layout="responsive"
                                         alt="logo">
@@ -1275,7 +1280,7 @@
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
-                                <h4 class=" f-s-14 f-w-700 orange-txt">Prakash Sharma</h4>
+                                <h4 class=" f-s-16 f-w-700 orange-txt">Prakash Sharma</h4>
                                 <div style="width:60px; margin: 5px  0px;">
                                     <amp-img src="./assest/stars.webp" width="4" height="1" layout="responsive"
                                         alt="logo">
@@ -1300,7 +1305,7 @@
 
                             </div>
                             <div class="over-say-review-detail-wrapper">
-                                <h4 class=" f-s-14 f-w-700 orange-txt">Akanksha Pandey </h4>
+                                <h4 class=" f-s-16 f-w-700 orange-txt">Akanksha Pandey </h4>
                                 <div style="width:60px; margin: 5px  0px;">
                                     <amp-img src="./assest/stars.webp" width="4" height="1" layout="responsive"
                                         alt="logo">
@@ -1322,7 +1327,7 @@
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
-                                <h4 class=" f-s-14 f-w-700 orange-txt">Gayatri</h4>
+                                <h4 class=" f-s-16 f-w-700 orange-txt">Gayatri</h4>
                                 <div style="width:60px; margin: 5px  0px;">
                                     <amp-img src="./assest/stars.webp" width="4" height="1" layout="responsive"
                                         alt="logo">
@@ -1330,8 +1335,8 @@
                                 </div>
                                 <p class=" f-s-14 f-w-400 gray-txt">Doctor Basavaraj is a brilliant doctor, when I was
                                     struggling with medication for my
-                                    mother for high diabetes after having her operation, we met Dr Basavaraj. Within a
-                                    week he solved the problem to a large extent. My mother likes to visit The OneCare
+                                    mother for high diabetes after hav6ng her operation, we met Dr Basavaraj. Within a
+                                    week he solved the problem to a la2ge extent. My mother likes to visit The OneCare
                                     Diabetes clinic for his patience and polite approach to handle patient queries. </p>
                             </div>
 
@@ -1342,7 +1347,7 @@
                                 </amp-img>
                             </div>
                             <div class="over-say-review-detail-wrapper">
-                                <h4 class=" f-s-14 f-w-700 orange-txt">Rajesh Talreja </h4>
+                                <h4 class=" f-s-16 f-w-700 orange-txt">Rajesh Talreja </h4>
                                 <div style="width:60px; margin: 5px  0px;">
                                     <amp-img src="./assest/stars.webp" width="4" height="1" layout="responsive"
                                         alt="logo">
@@ -1378,7 +1383,7 @@
 
                 </div>
                 <div>
-                    <h2 class=" orange-txt  f-s-24 f-w-700">Bellandur</h2>
+                    <h2 style="max-width: 85% ; margin: 10px auto;" class="orange-txt  f-s-24 f-w-700">Bellandur</h2>
                     <div class="flex">
                         <div class="loc-detail">
                             <div class="flex1">
@@ -1432,7 +1437,7 @@
                 </div>
 
                 <div>
-                    <h2 class="orange-txt  f-s-24 f-w-700">Koramangala</h2>
+                    <h2 style="max-width: 85% ; margin: 10px auto;" class="orange-txt  f-s-24 f-w-700">Koramangala</h2>
                     <div class="flex">
                         <div class="loc-detail">
                             <div class="flex1">
@@ -1485,7 +1490,7 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="orange-txt  f-s-24 f-w-700">Indiranagar</h2>
+                    <h2 style="max-width: 85% ; margin: 10px auto;" class="orange-txt  f-s-24 f-w-700">Indiranagar</h2>
                     <div class="flex">
                         <div class="loc-detail">
                             <div class="flex1">
@@ -1545,7 +1550,7 @@
 
         <section style="padding: 0;" id="travel">
             <div style="background: linear-gradient(177.97deg, #D0F2FF 1.72%, #FFFFFF 98.52%)">
-                <div class="flex" style="padding: 10px;">
+                <div class="flex" style="padding: 20px;">
                     <div>
                         <h2 class="drk-blu-txt f-s-18 f-w-700">Skip the travel!</h2>
                         <p class="f-w-400 f-s-14">Take Online Doctor Consultation <br />Private video consultation</p>
@@ -1565,7 +1570,7 @@
 
 
             </div>
-            <div style="padding: 30px;">
+            <div style="padding: 30px 0px;">
 
                 <h3 class="center-txt f-s-14 f-w-700">How technology-enabled OneCare Diabetes<br />
                     Clinics provide better outcomes:</h3>
@@ -1575,7 +1580,7 @@
 
 
                     <div id="tick-head">
-                        <p class=" f-s-12 f-s-700 blu-txt">OneCare Smart<br />
+                        <p style="margin-right: 10px;" class="  f-s-12 f-s-700 blu-txt">OneCare Smart<br />
                             Diabetes Clinics</p>
                         <p class=" f-s-12 f-s-700  drk-blu-txt">Other
                             <br /> Clinics
@@ -1725,27 +1730,27 @@
             <div>
 
                 <div class="flex">
-                    <h4 class="gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Lorem ipsum dolor sit amet </h4>
                 </div>
 
                 <div class="flex">
-                    <h4 class="gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class="  f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
                 </div>
 
                 <div class="flex">
-                    <h4 class="gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
                 </div>
 
                 <div class="flex">
-                    <h4 class="gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
                 </div>
 
                 <div class="flex">
-                    <h4 class="gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
                 </div>
 
                 <div class="flex">
-                    <h4 class="gray-txt">Lorem ipsum dolor sit amet </h4>
+                    <h4 class=" f-s-14 f-w-500 f-s-1  gray-txt">Lorem ipsum dolor sit amet </h4>
                 </div>
 
 
@@ -1778,13 +1783,13 @@
 
                 </div>
                 <div>
-                    <h3 class="gray-txt web"> A Chain of <BR />Smart Diabetes Clinics</h3>
+                    <h3 class=" f-s-16 f-w-500 gray-txt web"> A Chain of <BR />Smart Diabetes Clinics</h3>
 
                 </div>
             </nav>
         </footer>
-        <div style="background-color: white; padding: 10px;">
-            <h4 class="center-txt">
+        <div style="background-color: white; padding: 10px; height: 120px;">
+            <h4 class="center-txt f-s-14 f-w-400">
                 © 2021, OneCare. All Rights Reserved
             </h4>
         </div>
@@ -1792,3 +1797,12 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
