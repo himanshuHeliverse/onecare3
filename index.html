@@ -456,8 +456,8 @@
         }
 
         .slide-wrapper:nth-child(odd) {
-      
-                background: linear-gradient(180deg, #FFCFDD -4.68%, #FFEFD4 118.2%),
+
+            background: linear-gradient(180deg, #FFCFDD -4.68%, #FFEFD4 118.2%),
                 linear-gradient(0deg, #C4C4C4, #C4C4C4);
         }
 
@@ -470,11 +470,11 @@
 
         }
 
-        .slide-wrapper2{
+        .slide-wrapper2 {
             height: 100%;
             background-repeat: no-repeat;
             background-position: 100% 100%;
-        } 
+        }
 
         #location div h1 {
             margin-left: 20px;
@@ -497,7 +497,7 @@
             align-items: flex-start;
         }
 
-        .slide>div:first-child  p {
+        .slide>div:first-child p {
             margin: 15px 0px;
         }
 
@@ -514,7 +514,7 @@
             background-color: #28B1DA;
             margin: 20px 0px;
             justify-content: space-between;
-         
+
             box-shadow: 0px 20px 40px 0px #EEF0F2;
         }
 
@@ -695,15 +695,48 @@
             cursor: pointer;
 
         }
-        .amp-accordion__header {
-        border: none;
-        background-color: white;
-        border-radius: 10px;
-        padding: 0px 10px;box-shadow: 0px 20px 40px 0px #EEF0F2;
 
-      }
-  
-  
+        .amp-accordion__header {
+            border: none;
+            background-color: white;
+            border-radius: 10px;
+            padding: 0px 10px;
+            box-shadow: 0px 20px 40px 0px #EEF0F2;
+
+        }
+
+        .marquee {
+            margin-top: 50px;
+              overflow: hidden; 
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scrolling 10s linear infinite;
+        }
+
+        .marquee-item {
+          
+            margin: 0 10px;
+            /*   flex: 0 0 20vw; */
+            /*   margin: 0 2vw; */
+        }
+
+        .marquee-item img {
+            display: block;
+            width: 100%;
+            /*   padding: 0 20px; */
+        }
+
+        @keyframes scrolling {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translatex(-250px);
+            }
+        }
     </style>
 
 </head>
@@ -738,12 +771,12 @@
         <section id="top">
 
             <div>
-                <amp-base-carousel auto-advance="true" auto-advance-interval="3000000000000" id="carouselID" height="650"
-                    layout="fixed-height" visible-count="1" advance-count="1" controls="never"
+                <amp-base-carousel auto-advance="true" auto-advance-interval="3000000000000" id="carouselID"
+                    height="650" layout="fixed-height" visible-count="1" advance-count="1" controls="never"
                     on="slideChange: SelectorID.toggle(index=event.index,value=true)">
                     <div class="slide-wrapper">
 
-                        <div class="slide-wrapper2" style="background-image: url('./assest/cirl2-pink.svg');" >
+                        <div class="slide-wrapper2" style="background-image: url('./assest/cirl2-pink.svg');">
                             <div class="slide" style="  background-image: url('./assest/circle.svg');">
                                 <div style=" z-index:2;">
                                     <h1 class="f-w-700 f-s-30">Anup Khees<br /> <span class="f-w-500">Age-35 yrs</span>
@@ -755,8 +788,8 @@
                                             </amp-img>
                                             <h4 class="f-w-500">92/115</h4>
                                         </div>
-    
-    
+
+
                                         <div class="flex">
                                             <amp-img style="width: 20px;" src="./assest/oill.svg" width="1" height="1"
                                                 layout="responsive" alt="logo">
@@ -764,8 +797,9 @@
                                             <h4 class="f-w-500">50% Reduction</h4>
                                         </div>
                                     </div>
-    
-                                    <p class="f-s-14 f-w-400">My blood sugar level came down to 92/115 and my<br /> medicine
+
+                                    <p class="f-s-14 f-w-400">My blood sugar level came down to 92/115 and my<br />
+                                        medicine
                                         dosage also got reduced to
                                         half
                                         and<br /> I'm very sure that it will stop completely in some time. </p>
@@ -779,22 +813,24 @@
                                         layout="responsive" alt="">
                                     </amp-img>
                                 </div>
-    
+
                             </div>
                         </div>
-                       
+
                     </div>
                     <div class="slide-wrapper">
                         <div class="slide-wrapper2" style="background-image: url('./assest/cir2-blu.svg');">
                             <div class="slide" style="background-image: url('./assest/circle-blu.svg');">
                                 <div style=" z-index:2;">
-    
-                                    <h1 class="f-s-30 f-w-700 pink-txt">Live A Life Beyond Diabetes,<br /> Starting Today.
+
+                                    <h1 class="f-s-30 f-w-700 pink-txt">Live A Life Beyond Diabetes,<br /> Starting
+                                        Today.
                                     </h1>
-    
+
                                     <p class="f-s-14 f-w-400">Our team includes leading diabetologists,<br />
                                         endocrinologists, diabetes educators,
-                                        dieticians, <br />health coaches all working with you to build a<br /> personalised
+                                        dieticians, <br />health coaches all working with you to build a<br />
+                                        personalised
                                         care plan
                                         specific to your need. </p>
                                     <div class="m-t-10">
@@ -810,10 +846,10 @@
                                         layout="responsive" alt="">
                                     </amp-img>
                                 </div>
-    
+
                             </div>
                         </div>
-                     
+
                     </div>
                     <div class="slide-wrapper">
                         <div class="slide-wrapper2" style="background-image: url('./assest/cirl2-pink.svg');">
@@ -821,8 +857,9 @@
                                 <div style=" z-index:2;">
                                     <h1 class='f-s-30 f-w-700;'>Don't Just Fight Diabetes,<br /> Understand & Manage It.
                                     </h1>
-    
-                                    <p class="f-s-14 f-w-400">Diabetes care is unique to everyone. Beat it with the <br />
+
+                                    <p class="f-s-14 f-w-400">Diabetes care is unique to everyone. Beat it with the
+                                        <br />
                                         Right Approach that works for
                                         you.
                                     </p>
@@ -833,14 +870,14 @@
                                 </div>
                                 <div style="  position: relative;  width: 475px;;
                                 left: -10%; top: 218px;">
-                                    <amp-img src="./assest/slack-imgs-1 1.svg" width="1.5" height="1.3" layout="responsive"
-                                        alt="">
+                                    <amp-img src="./assest/slack-imgs-1 1.svg" width="1.5" height="1.3"
+                                        layout="responsive" alt="">
                                     </amp-img>
                                 </div>
-    
+
                             </div>
                         </div>
-                       
+
                     </div>
                     <div class="slide-wrapper">
                         <div class="slide-wrapper2" style="background-image: url('./assest/cir2-blu.svg');">
@@ -848,7 +885,7 @@
                                 <div>
                                     <h1 class='f-s-30 f-w-700 pink-txt'>Skip The Travel
                                     </h1>
-    
+
                                     <p class="f-s-14 f-w-400">Take Online Doctor Consultation <br />
                                         Private video consultation
                                     </p>
@@ -861,13 +898,14 @@
                                 width: 415px;
                                 left: 3%;
                                 top: 272px;">
-                                    <amp-img src="./assest/d.svg" width="1.5" height="1.3" layout="responsive" alt="logo">
+                                    <amp-img src="./assest/d.svg" width="1.5" height="1.3" layout="responsive"
+                                        alt="logo">
                                     </amp-img>
                                 </div>
-    
+
                             </div>
                         </div>
-                       
+
                     </div>
 
                 </amp-base-carousel>
@@ -893,7 +931,8 @@
 
                 <input type="text" name="name" placeholder="Full Name" required>
 
-                <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{10}" maxlength="10" title="Please enter a valid phone number" required>
+                <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{10}" maxlength="10"
+                    title="Please enter a valid phone number" required>
 
                 <div style="display: flex; justify-content: space-between;">
                     <div style="    display: flex;
@@ -1647,7 +1686,9 @@
                     </div>
                     <div class="flex map-btn-wrapper">
                         <div>
-                            <a target="_blank" href="https://www.google.com/maps/place/Sattva+Superspeciality+Centre+-+Diabetes,+Thyroid+%26+Endocrinology+Clinic+%2F+Child+Care+Clinic/@12.9787463,77.6440287,15z/data=!4m5!3m4!1s0x0:0x510c519d7abd0642!8m2!3d12.9787463!4d77.6440287?sa=X&ved=2ahUKEwiBuIOAm8P1AhWyzTgGHRAMAnYQ_BJ6BAgbEAU&shorturl=1" class=" white f-s-12 f-s-i f-w-700 center-txt">GET DIRECTIONS</a>
+                            <a target="_blank"
+                                href="https://www.google.com/maps/place/Sattva+Superspeciality+Centre+-+Diabetes,+Thyroid+%26+Endocrinology+Clinic+%2F+Child+Care+Clinic/@12.9787463,77.6440287,15z/data=!4m5!3m4!1s0x0:0x510c519d7abd0642!8m2!3d12.9787463!4d77.6440287?sa=X&ved=2ahUKEwiBuIOAm8P1AhWyzTgGHRAMAnYQ_BJ6BAgbEAU&shorturl=1"
+                                class=" white f-s-12 f-s-i f-w-700 center-txt">GET DIRECTIONS</a>
                         </div>
                         <div>
                             <a href="#form-section" class="white f-s-12 f-s-i f-w-700 center-txt">BOOK A
@@ -1853,29 +1894,45 @@
         </section>
         <section style="background:white">
             <h3 class="f-s-18 f-w-700 ">In the news</h3>
-            <div class="flex">
 
-                <div>
-                    <amp-img style="width: 80px;  height:35px;margin-right: 10px;" src="./assest/vccircle.svg" width="1"
-                        height="1" layout="responsive" alt="logo">
-                    </amp-img>
-                </div>
-                <div>
-                    <amp-img style="width: 110px; height:35px;  margin-right: 10px;" src="./assest/logo_yourstory 1.svg"
-                        width="1" height="1" layout="responsive" alt="logo">
-                    </amp-img>
-                </div>
-                <div>
-                    <amp-img style="width: 100px;height:35px;" src="./assest/EH-Logo-white 1.svg" width="1" height="1"
-                        layout="responsive" alt="logo">
-                    </amp-img>
-                </div>
-                <div>
-                    <amp-img style="width: 100px; height:65px;" src="./assest/IndianStartupNews-logo 1.svg" width="1"
-                        height="1" layout="responsive" alt="logo">
-                    </amp-img>
+            <div class="marquee">
+                <div class="marquee-content">
+                
+
+
+
+
+
+
+                    <div class="marquee-item">
+                        <amp-img style="width: 80px;  height:35px;margin-right: 10px;" src="./assest/vccircle.svg"
+                            width="1" height="1" layout="responsive" alt="logo">
+                        </amp-img>
+                    </div>
+
+                    <div class="marquee-item">
+                        <amp-img style="width: 110px; height:35px;  margin-right: 10px;"
+                            src="./assest/logo_yourstory 1.svg" width="1" height="1" layout="responsive" alt="logo">
+                        </amp-img>
+                    </div>
+
+                    <div class="marquee-item">
+                        <amp-img style="width: 100px;height:35px;" src="./assest/EH-Logo-white 1.svg" width="1"
+                            height="1" layout="responsive" alt="logo">
+                        </amp-img>
+                    </div>
+
+                    <div class="marquee-item">
+                        <amp-img style="width: 100px; height:65px;" src="./assest/IndianStartupNews-logo 1.svg"
+                            width="1" height="1" layout="responsive" alt="logo">
+                        </amp-img>
+                    </div>
+
+
+
                 </div>
             </div>
+
         </section>
         <section id="FAQ">
             <h1 class="center-txt drk-blu-txt">FAQs</h1>
@@ -1885,9 +1942,9 @@
 
             <div>
 
-                <amp-accordion id="my-accordion" >
+                <amp-accordion id="my-accordion">
                     <section>
-                        <h2  class="amp-accordion__header">
+                        <h2 class="amp-accordion__header">
                             <div class="flex" style="justify-content: space-between; padding: 6px;">
                                 <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What is Type 2 diabetes? </h4>
                                 <span>
@@ -1898,7 +1955,8 @@
                             </div>
 
                         </h2>
-                        <p style="padding: 15px 0px;" class="f-s-14 f-w-400 gray-txt">Your pancreas, an organ positioned between your stomach and backbone that aids digestion
+                        <p style="padding: 15px 0px;" class="f-s-14 f-w-400 gray-txt">Your pancreas, an organ positioned
+                            between your stomach and backbone that aids digestion
                             releases insulin into your blood. Insulin assists your blood in transporting glucose to all
                             of your body's cells. Sometimes your body does not produce enough insulin, or the insulin
                             does not function properly. Glucose remains in your blood and does not reach your cells as a
@@ -1907,7 +1965,7 @@
                         </p>
                     </section>
                     <section>
-                        <h2  class="amp-accordion__header">
+                        <h2 class="amp-accordion__header">
                             <div class="flex" style="justify-content: space-between; padding: 6px;">
                                 <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">Can diabetes be managed with medicines alone?
                                 </h4>
@@ -1918,13 +1976,13 @@
                                 </span>
                             </div>
                         </h2>
-                        <p class="f-s-14 f-w-400 gray-txt"  style="padding: 15px 0px;">
+                        <p class="f-s-14 f-w-400 gray-txt" style="padding: 15px 0px;">
                             No. Diabetes is a lifestyle disorder which cannot be managed with medicines alone. Many
                             factors like diet, physical activity, stress and other lifestyle habits play a role in
                             reversal.</p>
                     </section>
                     <section>
-                        <h2  class="amp-accordion__header">
+                        <h2 class="amp-accordion__header">
                             <div class="flex" style="justify-content: space-between; padding: 6px;">
                                 <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What does OneCare offer?</h4>
                                 <span>
@@ -1934,13 +1992,14 @@
                                 </span>
                             </div>
                         </h2>
-                        <p class="f-s-14 f-w-400 gray-txt" style="padding: 15px 0px;">OneCare - India's first chain of Smart diabetes Clinics offer personalised diabetes
+                        <p class="f-s-14 f-w-400 gray-txt" style="padding: 15px 0px;">OneCare - India's first chain of
+                            Smart diabetes Clinics offer personalised diabetes
                             programmes that's right for you. Our Comprehensive clinical care consists of 1-1- in-depth
                             doctor consultations, expert dietitian sessions, and most importantly, a structured roadmap
                             for your diabetes care.</p>
                     </section>
                     <section>
-                        <h2  class="amp-accordion__header">
+                        <h2 class="amp-accordion__header">
                             <div class="flex" style="justify-content: space-between;  padding: 6px;">
                                 <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt"> What is the OneCare IMPACT program?</h4>
                                 <span>
@@ -1963,7 +2022,7 @@
                         </div>
                     </section>
                     <section>
-                        <h2  class="amp-accordion__header">
+                        <h2 class="amp-accordion__header">
                             <div class="flex" style="justify-content: space-between;  padding: 6px;">
                                 <h4 class=" f-s-14 f-w-500 f-s-1 gray-txt">What are the benefits of the program?</h4>
                                 <span>
@@ -1974,7 +2033,7 @@
                             </div>
                         </h2>
                         <div style="padding: 15px 0px;" class="f-s-14 f-w-400 gray-txt">
-                            <h4 >Apart from blood sugar reduction, other benefits of the program are:
+                            <h4>Apart from blood sugar reduction, other benefits of the program are:
 
 
 
@@ -2001,8 +2060,8 @@
 
 
 
-             
-                 
+
+
                 </amp-accordion>
 
 
@@ -2014,11 +2073,11 @@
 
 
 
-              
 
-       
-  
-            <div style="text-align: center;" class="button blue-bg ">VIEW ALL <span style=" margin-left: 5px; border: solid white;
+
+
+
+                <div style="text-align: center;" class="button blue-bg ">VIEW ALL <span style=" margin-left: 5px; border: solid white;
                 border-width: 0 3px 3px 0;
                 display: inline-block;
                 padding: 3px; transform: rotate(-45deg);
